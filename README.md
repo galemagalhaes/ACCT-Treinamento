@@ -1,2 +1,2 @@
 # ACCT-Treinamento
- Repositório para exercícios desenvolvido durante treinamento do estágio  ACCT.
+ Repositório para armazenar os exercícios desenvolvidos durante treinamento do estágio  ACCT.
