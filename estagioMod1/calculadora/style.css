@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+.fundo {
+  background-image: linear-gradient(45deg, gray, white);
+height: 100vh;
+color: darkblue;
+font-family: 'Roboto', sans-serif;
+text-align: center;
+}
+
+.calculadora {
+  position: absolute;
+  background-color: rgba(128, 116, 116, 0.8);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.botao, .igual {
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  background-color: rgba(169, 169, 169, 0.8);
+  border: none;
+  cursor: pointer;
+  margin: 3px;  
+}
+
+.botao:hover, .igual:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.igual {
+  background-color: rgba(0, 255, 255, 0.8);
+}
+
+#resultado {
+  background-color: rgba(255, 255, 255, 0.9);  
+  width: 209px;
+  height: 30px;
+  margin: 5px;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  text-align: right;
+  padding: 5px;
+}
