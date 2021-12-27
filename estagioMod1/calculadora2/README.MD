@@ -6,10 +6,14 @@ Ela permite o cálculo de operações diferentes na mesma linha, por exemplo uma
 
 Esta é uma calculadora simples que não usa, até o momento, separação por parenteses, por exemplo, logo as operações de divisão e multiplicação serão sempre realizadas antes das operações de soma e subtração.
 
+É importante também sempre lembrar de usar a função clear (botão 'C') antes de iniciar um novo cálculo para limpar o display e não gerar erros matemáticos com números sobrando na expressão.
+
 ### HTML
 - Uma **'div'** contendo uma **'section'** e nesta todas os botões da calculadora;
 - São **10 botões numéricos** (de 0 a 9) e mais **8 botões com operadores e funções**;
 - Cada botão tem definida uma classe para ser utilizada na estilização.
+
+Os itens foram 'classificados' com nomes diferentes para facilitar futuras modificações no código.
 
 ### CSS
 O documento ***CSS*** possui uma formatação genérica (*) determinando margin, padding, font-family
