@@ -11,8 +11,7 @@
   height: 100vh;
   display: grid;
   justify-content: center;
-  align-content: center;
-  
+  align-content: center;  
 }
 
 .display {
@@ -24,8 +23,7 @@
   grid-column: 1 / 5;
   font-size: 30px;
   color: white;
-  padding-left: 15px;
-  
+  padding-left: 15px;  
 }
 
 .zero {
@@ -38,8 +36,7 @@ section {
   width: 320px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  box-shadow: 4px 4px 15px rgb(0, 0, 0, .5);
-  
+  box-shadow: 4px 4px 15px rgb(0, 0, 0, .5);  
 }
 
 .item {

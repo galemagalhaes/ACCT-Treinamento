@@ -1,6 +1,6 @@
 function insertValues(num) {
   const input = document.getElementById('input-value').value;
-document.getElementById('input-value').value = input + num;
+  document.getElementById('input-value').value = input + num;
 }
 
 function calculate() {
@@ -24,7 +24,3 @@ function back() {
   document.getElementById('input-value').value = input.substring(0, input.length - 1);
 }
 
-function percent(num){
-  const input = document.getElementById('input-value').value;
-  document.getElementById('input-value').value = (input/100)*num;
-}
