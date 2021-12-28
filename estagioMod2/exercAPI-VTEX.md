@@ -4,6 +4,6 @@
 
 A API consultada foi a CHECKOUT API, com o verbo GET no item 'Get cart information by ID' e o curl gerado foi:
 
-```curl --location --request GET 'https://apiexamples.vtexcommercestable.com.br/api/checkout/pub/orderForm/ede846222cd44046ba6c638442c3505a?refreshOutdatedData=true' \
+``` curl --location --request GET 'https://apiexamples.vtexcommercestable.com.br/api/checkout/pub/orderForm/ede846222cd44046ba6c638442c3505a?refreshOutdatedData=true' \
 --header 'Cookie: .ASPXAUTH=343F620DCF0B18866FF7737A41E437CEABB2DABE23C390CD1F490518A0B215DA09929CD75273C5B46B0C96F41F43BFC0973685230B0FD63B54B4E53DE00887CDFA533254538FEA01B07A786304CFB37796AA1B146BDA2959D9677C589095CAFFAB7757F1237564E13B9C241807887D5E2371F99E0EF0709A40B12DFB8F4F0D00A3F070EEC56756C25F2A5CA7CB63F8D93ACAD82B585B24D9077BC5699AD88864A56EE3CA; checkout.vtex.com=__ofid=ede846222cd44046ba6c638442c3505a' \
---data-raw ''```
+--data-raw '' ```
