@@ -87,4 +87,4 @@ function calculate() {
 }
 ```
 
-O resultado final é esse ![](/img/calculadora.png):
+O resultado final é esse ![](./img/calculadora.png):
