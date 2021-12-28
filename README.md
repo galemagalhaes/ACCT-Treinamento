@@ -6,7 +6,7 @@
  
 - [Exercícios](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod1/grid) CSS Grid feito na site Grid Garden.
 - [Exercícios](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod1/flexbox) CSS Flexbox feito no site Flexbox Froggy.
-- [Exercício]() JavaScript - Calculadora.
+- [Exercício](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod1/calculadora2) JavaScript - Calculadora.
 
 ### **Módulo 2**
-[Exercício]() APIs VTEX - Request no Postman
+- [Exercício](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod2/APIs-VTEX) APIs VTEX - Request no Postman
