@@ -59,7 +59,7 @@ Por último a estilização dos botões que foram divididos em classes diferente
 ### **JavaScript**
 
 Todas os botões da calculadora recebem funções por meio do evento ***onclick***, ou seja, as funções são acionadas quando o botão é clicado.
-
+Os números e os operadores digitados são strings, e para esse tipo de dado o JavaScript tem alguns métodos nativos, alguns deles serão descritos adiante.
 
 O documento JS contém 5 functions, descritas a seguir:
 
@@ -71,7 +71,7 @@ function insertValues(num) {
 }
 ```
 
-- **'function calculate** é a função que realiza os cálculos matemáticos quando o botão de igual (=) é acionado. O display recebe uma expressão string como input e através da função 'eval' avalia essa expressão, realiza o cálculo e retorna seu valor. Essa função deve ser usada com cuidado, para mais informações acesse este [site](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/eval).
+- **'function calculate** é a função que realiza os cálculos matemáticos quando o botão de igual (=) é acionado. O display recebe uma expressão string como input e através da função **'eval'** avalia essa expressão, realiza o cálculo e retorna seu valor. Essa função deve ser usada com cuidado, para mais informações acesse este [site](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/eval).
 ```
 function calculate() {
   const input = document.getElementById('input-value').value;
@@ -103,5 +103,6 @@ function back() {
   document.getElementById('input-value').value = input.substring(0, input.length - 1);
 }
 ```
+Essa é a aparência da calculadora.
 
 ![](./img/calculadora2.png)
