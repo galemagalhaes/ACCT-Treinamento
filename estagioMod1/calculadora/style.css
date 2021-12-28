@@ -6,10 +6,10 @@
 
 .fundo {
   background-image: linear-gradient(45deg, gray, white);
-height: 100vh;
-color: darkblue;
-font-family: 'Roboto', sans-serif;
-text-align: center;
+  height: 100vh;
+  color: darkblue;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
 
 .calculadora {
