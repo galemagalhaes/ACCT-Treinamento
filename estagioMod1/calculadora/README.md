@@ -87,6 +87,6 @@ function calculate() {
 }
 ```
 
-O resultado final é esse 
+O resultado final é esse: 
 
-![](./img/calculadora.png):
+![](./img/calculadora.png)
