@@ -2,9 +2,9 @@
 
  Repositório para armazenar os exercícios desenvolvidos durante treinamento do estágio  ACCT.
 
----
- ## **Módulo 1**
----
+
+>> ## **Módulo 1**
+
  ### Tópicos estudados
 - [x] 1.1 - GIT
 - [x] 1.2 - Markdown
