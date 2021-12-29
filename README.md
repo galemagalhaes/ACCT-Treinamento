@@ -20,7 +20,7 @@
 - [x] [Exercício 3](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod1/calculadora2) - Calculadora
 
 
-> ## **Módulo 2**
+>> ## **Módulo 2**
 
 ### Tópicos estudados
 
@@ -29,7 +29,7 @@
 - [x] 2.3 - NPM e Yarn
 - [x] 2.4 - VTEX Overview
 - [x] 2.5 - Metodologias ágeis
-- 2.6 - APIs e Postman
+- [x] 2.6 - APIs e Postman
 * 2.6.1 - APIs VTEX - Tópico com exercício 
 
 #### Exercícios do módulo 2
