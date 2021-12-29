@@ -29,7 +29,7 @@
 - [x] 2.4 - VTEX Overview
 - [x] 2.5 - Metodologias ágeis
 - [x] 2.6 - APIs e Postman
-* [x] 2.6.1 - APIs VTEX - Tópico com exercício 
+* 2.6.1 - APIs VTEX - Tópico com exercício 
 
 #### Exercícios do módulo 2
 - [x] [Exercício](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod2/APIs-VTEX) APIs VTEX - Request no Postman
