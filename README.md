@@ -19,9 +19,9 @@
 - [x] [Exercício 2](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod1/flexbox) - CSS Flexbox feito no site Flexbox Froggy.
 - [x] [Exercício 3](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod1/calculadora2) - Calculadora
 
----
+
 > ## **Módulo 2**
----
+
 ### Tópicos estudados
 
 - [ ] 2.1 - React
