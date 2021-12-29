@@ -92,7 +92,7 @@
 - [ ] [Exercício]() - Desenvolvendo Componentes React em VTEX IO 
 
 > ## **Módulo 8**
-> 
+######
 
 ### Tópicos estudados
 
