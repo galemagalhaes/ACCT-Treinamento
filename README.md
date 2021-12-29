@@ -91,7 +91,8 @@
 ### Exercícios do módulo 7
 - [ ] [Exercício]() - Desenvolvendo Componentes React em VTEX IO 
 
->> ## **Módulo 8**
+> ## **Módulo 8**
+> 
 
 ### Tópicos estudados
 
