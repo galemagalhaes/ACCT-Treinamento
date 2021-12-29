@@ -1,8 +1,8 @@
 # ACCT-Treinamento
-#
+
  Repositório para armazenar os exercícios desenvolvidos durante treinamento do estágio  ACCT.
 
-#
+
 >> ## **Módulo 1**
 
  ### Tópicos estudados
@@ -29,7 +29,7 @@
 - [x] 2.3 - NPM e Yarn
 - [x] 2.4 - VTEX Overview
 - [x] 2.5 - Metodologias ágeis
-- [x] 2.6 - APIs e Postman
+- 2.6 - APIs e Postman
 * 2.6.1 - APIs VTEX - Tópico com exercício 
 
 #### Exercícios do módulo 2
