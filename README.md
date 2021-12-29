@@ -20,7 +20,7 @@
 - [x] [Exercício 3](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod1/calculadora2) - Calculadora
 
 ---
-## **Módulo 2**
+> ## **Módulo 2**
 ---
 ### Tópicos estudados
 
