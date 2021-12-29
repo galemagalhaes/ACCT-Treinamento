@@ -5,8 +5,8 @@
  ### **Módulo 1**
 
  #### Tópicos estudados
-1.1 - GIT
-1.2 - Markdown
+1.1. - GIT
+1.2. - Markdown
 1.3 - CSS
 1.3.1 - CSS Grid
 1.3.2 - CSS Flexbox
