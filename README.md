@@ -5,12 +5,12 @@
  ### **Módulo 1**
 
  #### Tópicos estudados
-- [ ] 1.1 - GIT
-- [ ] 1.2 - Markdown
-- [ ] 1.3 - CSS
+- [x] 1.1 - GIT
+- [x] 1.2 - Markdown
+- [x] 1.3 - CSS
 * 1.3.1 - CSS Grid - Tópico com exercício 
 * 1.3.2 - CSS Flexbox - Tópico com exercício 
-- [ ] 1.4 - JavaScript
+- [x] 1.4 - JavaScript
 * 1.4.1 - JavaScript - Calculadora - Tópico com exercício 
 
 #### Exercícios do módulo 1
