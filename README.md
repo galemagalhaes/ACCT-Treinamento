@@ -82,7 +82,7 @@
 ### Exercícios do módulo 6
 - [ ] [Exercício]() - Master Data v1
 - [ ] [Exercício]() - Master Data v2
-- [ ] 
+  
 ---
 > ## **Módulo 7**
 ---
@@ -98,11 +98,53 @@
 > ## **Módulo 8**
 ---
 
-## Tópicos estudados
+### Tópicos estudados
 
 - [ ] 8.1 - React Hooks
 - [ ] 8.2 - Componentes React
   * 8.2.1 - Desenvolvendo Componentes React em VTEX IO - Tópico com exercício
 
-## Exercícios do módulo 8
+### Exercícios do módulo 8
 - [ ] [Exercício]() - Desenvolvendo Componentes React em VTEX IO 
+
+---
+> ## **Módulo 9**
+---
+### Tópicos estudados
+
+- [ ] 9.1 - GraphQL
+  * 9.1.1 - Fazendo Queries e Mutations em GraphQL - Tópico com exercício
+
+### Exercícios do módulo 9
+- [ ] [Exercício]() - Fazendo Queries e Mutations em GraphQL
+
+---
+> ## **Módulo 10**
+---
+### Tópicos estudados
+
+- [ ] 10.1 - Typescript
+  * 10.1.1 - Aplicando Typescript - Tópico com exercício
+
+### Exercícios do módulo 10
+- [ ] [Exercício]() - Aplicando Typescript
+
+---
+> ## **Módulo 11**
+---
+### Tópicos estudados
+
+- [ ] 11.1 - Testes Unitários
+  * 11.1.1 - Aplicando testes unitários em VTEX IO - Tópico com exercício
+
+### Exercícios do módulo 11
+- [ ] [Exercício]() - Aplicando Typescript
+
+---
+> ## **Avaliação**
+---
+### Tópicos 
+
+- [ ] Entrega do Projeto Final
+- [ ] Pesquisa de Satisfação
+- [ ] Feedback Classroom & Trilhas
