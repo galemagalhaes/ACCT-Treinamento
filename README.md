@@ -8,12 +8,14 @@
 - 1.1 - GIT
 - 1.2 - Markdown
 - 1.3 - CSS
-- 1.3.1 - CSS Grid - Exercício Prático
-[Exercício 1](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod1/grid) CSS Grid feito na site Grid Garden.
-- 1.3.2 - CSS Flexbox - Exercício Prático 
-[Exercício 2](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod1/flexbox) CSS Flexbox feito no site Flexbox Froggy.
+- 1.3.1 - CSS Grid - Tópico com exercício 
+- 1.3.2 - CSS Flexbox - Tópico com exercício 
 - 1.4 - JavaScript
-- 1.4.1 - JavaScript - Calculadora - Exercício Prático
+- 1.4.1 - JavaScript - Calculadora - Tópico com exercício 
+
+#### Exercícios do módulo 1
+[Exercício 1](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod1/grid) CSS Grid feito na site Grid Garden.
+[Exercício 2](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod1/flexbox) CSS Flexbox feito no site Flexbox Froggy.
 [Exercício 3](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod1/calculadora2)
 
 
@@ -27,5 +29,7 @@
 - 2.4 - VTEX Overview
 - 2.5 - Metodologias ágeis
 - 2.6 - APIs e Postman
-- 2.6.1 - APIs VTEX - Exercício 
+- 2.6.1 - APIs VTEX - Tópico com exercício 
+
+#### Exercícios do módulo 2
 [Exercício](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod2/APIs-VTEX) APIs VTEX - Request no Postman
