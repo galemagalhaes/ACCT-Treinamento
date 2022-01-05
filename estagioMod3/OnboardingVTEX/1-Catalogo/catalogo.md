@@ -6,6 +6,8 @@ A arquitetura do Catálogo VTEX tem 4 conceitos fundamentais:
 - [ ] Produtos: precisam fazer parte de uma categoria e estar vinculados a pelo menos 1 SKU;
 - [ ] SKU: é uma unidade física de um produto em estoque;
 - [ ] Especificações: propriedades e características específicas de um produto e seu SKU.
+  
+Os módulos do catálogo são:
 
 ### **Produtos e SKUs** 
 - Seção onde são adicionados novos produtos e SKUs à loja. São inseridas informações como nome do produto, descrição e imagens.
