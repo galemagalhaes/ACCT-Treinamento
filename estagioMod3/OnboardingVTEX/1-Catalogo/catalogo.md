@@ -1,5 +1,11 @@
 # **Catálogo**
-O catálogo é a área onde é possível configurar as funcionalidades relativas a variedade de produtos do e-commerce. Ele é composto por:
+O catálogo é a área onde é possível configurar as funcionalidades relativas a variedade de produtos do e-commerce. 
+
+A arquitetura do Catálogo VTEX tem 4 conceitos fundamentais:
+- [ ] Categoria: forma como são organizados os produtos;
+- [ ] Produtos: precisam fazer parte de uma categoria e estar vinculados a pelo menos 1 SKU;
+- [ ] SKU: é uma unidade física de um produto em estoque;
+- [ ] Especificações: propriedades e características específicas de um produto e seu SKU.
 
 ### **Produtos e SKUs** 
 - Seção onde são adicionados novos produtos e SKUs à loja. São inseridas informações como nome do produto, descrição e imagens.
