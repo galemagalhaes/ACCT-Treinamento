@@ -24,7 +24,7 @@
 ---
 ### Tópicos estudados
 
-- [ ] 2.1 - React
+- [ ] 2.1 - React - Tópico com exercício
 - [x] 2.2 - Metodologias ágeis - Scrum
 - [x] 2.3 - NPM e Yarn
 - [x] 2.4 - VTEX Overview
@@ -33,6 +33,8 @@
   * 2.6.1 - APIs VTEX - Tópico com exercício 
 
 ### Exercícios do módulo 2
+- [ ] [Exercício]() - React - desafio prático
+- [ ] 
 - [x] [Exercício](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod2/APIs-VTEX) - APIs VTEX - Request no Postman
 
 ---
