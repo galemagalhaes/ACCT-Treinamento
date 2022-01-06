@@ -34,7 +34,6 @@
 
 ### Exercícios do módulo 2
 - [ ] [Exercício]() - React - desafio prático
-- [ ] 
 - [x] [Exercício](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod2/APIs-VTEX) - APIs VTEX - Request no Postman
 
 ---
@@ -42,13 +41,13 @@
 ---
 ### Tópicos estudados
 
-- [ ] 3.1 - Figma
-- [ ] 3.2 - Onboarding VTEX - Tópico com exercício 
-- [ ] 3.3 - VTEX IO: Conceitos - Tópico com exercício 
+- [x] 3.1 - Figma
+- [x] 3.2 - Onboarding VTEX - Tópico com exercício 
+- [x] 3.3 - VTEX IO: Conceitos - Tópico com exercício 
 
 ### Exercícios do módulo 3
-- [ ] [Exercício]() - Onboarding VTEX
-- [ ] [Exercício]() - VTEX IO
+- [x] [Exercício]() - Onboarding VTEX
+- [x] [Exercício]() - VTEX IO
 
 ---
 > ## **Módulo 4**
