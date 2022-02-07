@@ -24,7 +24,7 @@
 ---
 ### Tópicos estudados
 
-- [ ] 2.1 - React - Tópico com exercício
+- [] 2.1 - React - Tópico com exercício
 - [x] 2.2 - Metodologias ágeis - Scrum
 - [x] 2.3 - NPM e Yarn
 - [x] 2.4 - VTEX Overview
