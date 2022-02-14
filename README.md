@@ -54,11 +54,11 @@
 ---
 ### Tópicos estudados
 
-- [ ] 4.1 - VTEX IO - Store Framework
+- [x] 4.1 - VTEX IO - Store Framework
   * 4.1.1 - VTEX IO - Store Framework Training - Tópico com exercício
 
 ### Exercícios do módulo 4
-- [ ] [Exercício]() - Store Framework Training
+- [x] [Exercício]() - Store Framework Training
 
 ---
 > ## **Módulo 5**

@@ -1,8 +1,8 @@
 # **Módulo 4: VTEX IO Store Framework**
 O que é esperado nesse módulo:
 - [x] Fazer o Onboarding de VTEX IO
-- [ ] Fazer o módulo de blocos básicos
-- [ ] Fazer o módulo de layouts complexos
+- [x] Fazer o módulo de blocos básicos
+- [x] Fazer o módulo de layouts complexos
 - [ ] Conhecer a Store Features
 
 O que é recomendado nesse módulo:
