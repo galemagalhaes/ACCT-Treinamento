@@ -1,0 +1,111 @@
+{
+  "responsive-layout.mobile#home": {
+    "children": ["list-context.image-list#banner-mobile"
+     ]
+  },
+  "list-context.image-list#banner-mobile":{
+    "children":[],
+    "props":{
+      "height": "grow",
+      "images":[
+        {
+          "mobileImage": "assets/img/banner-mobile.png"
+        }
+      ]
+    }
+  },
+  "rich-text#carrinho-icon-mobile": {
+    "props":{
+      "blockClass":"carrinho-mobile",
+      "text": "![cart](assets/icons/minicar-mobile.png)"
+    }
+  },
+  "login#mobile": {
+    "props":{
+      "blockClass":"login-mobile",
+      "iconLabel":"Login"
+    }
+  },
+  "flex-layout.row#booklists-mobile": {
+    "children": ["list-context.image-list#booklists"],
+    "props":{
+      "blockClass":"booklists-mobile"
+    }
+  },
+  "list-context.image-list#booklists-mobile": {
+    "children":["slider-layout#booklists-mobile"],
+    "props":{
+      "height": 200,
+      "images":[
+        {
+          "image":"assets/img/bl-para-ficar-rico.png"
+        },
+        {
+          "image":"assets/img/playlist-debater-2.png"
+        },
+        {
+          "image":"assets/img/playlist-pressa.png"
+        },
+        {
+          "image":"assets/img/bl-refletindo-sobre-a-vida.png"
+        },
+        {
+          "image":"assets/img/para-ser-fda.png"
+        },
+        {
+          "image":"assets/img/pura-diversao.png"
+        },
+        {
+          "image":"assets/img/para-tomar-sustos.png"
+        },
+        {
+          "image":"assets/img/para-o-coracao-bater-forte.png"
+        },
+        {
+          "image":"assets/img/para-se-aventurar.png"
+        },
+        {
+          "image":"assets/img/personagens-que-inspiram.png"
+        },
+        {
+          "image":"assets/img/classicos-que-nunca-morrem.png"
+        },
+        {
+          "image":"assets/img/para-ouvir-com-a-familia.png"
+        },
+        {
+          "image":"assets/img/para-levantar-o-astral.png"
+        },
+        {
+          "image":"assets/img/dando-a-volta-ao-mundo.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#booklists-mobile": {
+
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "booklists"
+    }
+
+  },
+  "flex-layout.row#booklist-titulo-mobile": {
+    "props":{
+      "blockClass":"booklists-titulo"
+    }, "children":["rich-text#booklists-mobile"]
+  },
+  "rich-text#booklists-mobile": {
+    "props": {
+      "textAlignment":"Center",
+      "text": "## Booklists\nPara encontrar o que o seu humor está pedindo",
+      "blockClass": "booklists"
+    }
+  }
+}

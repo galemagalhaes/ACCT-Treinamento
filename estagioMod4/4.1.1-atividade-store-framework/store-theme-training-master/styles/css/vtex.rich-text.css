@@ -1,0 +1,271 @@
+.container--deals {
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+}
+
+.container--shelfTitle {
+  font-family: 'Nunito';
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 50px 0px 0px 0px;
+}
+
+.headingLevel2--shelfTitle {
+  font-family: 'Nunito';
+  font-size: 26px;
+  font-weight: 700;
+  color: #5a5a5a;
+  line-height: 1.35px;
+}
+.paragraph--shelfTitle {
+font-size: 20px;
+font-weight: 400;
+color: #757575;
+}
+.container--label-news {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: 'Nunito';
+  margin-top: 90px;
+  padding: 0px 10px;
+}
+.heading--label-news {
+  font-family: 'Nunito';
+  font-size: 26px;
+  font-weight: 700;
+  color: #5a5a5a;
+  margin: 0px 0px 5px;
+
+}
+.paragraph--label-news {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0px 0px 15px;
+  color: #757575;
+  line-height: 20px;
+}
+.container--deals .paragraph {
+  margin: 0;
+}
+
+.container--link {
+  justify-content: center;
+}
+.container--outros-audiobooks-titulo {
+  width: auto;
+  margin:  40px auto;
+  justify-content: center;
+
+}
+.heading--outros-audiobooks-titulo {
+  font-family: 'Nunito';
+  font-size: 26px;
+  font-weight: 700;
+  color: #5a5a5a;
+  text-align: center;
+
+}
+.paragraph--outros-audiobooks-titulo {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.35px;
+  text-align: center;
+  color: #757575;
+  font-family: 'Nunito';
+}
+.container--booklists {
+  width: 1260px;
+  margin:  40px auto;
+  justify-content: center;
+
+}
+.heading--booklists {
+  font-family: 'Nunito';
+  font-size: 26px;
+  font-weight: 700;
+  color: #5a5a5a;
+  text-align: center;
+  margin: 10px 0px 5px 0px;
+}
+.paragraph--booklists {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #757575;
+  font-family: 'Nunito';
+  margin: 1px 0px 20px 0px;
+}
+.paragraph--menu-footer-1 {
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Nunito';
+  font-weight: 700;
+  justify-content: flex-start;
+  display: flex;
+  line-height: 1.35;
+  width: 200px;
+  margin: 0px 0px 0px 40px;
+  padding: 5px 17px 9px;
+}
+
+.paragraph--menu-footer-2 {
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Nunito';
+  font-weight: 700;
+  justify-content: flex-start;
+  display: flex;
+  line-height: 1.35;
+  width: 200px;
+  margin: 0px 0px 0px 22px;
+  padding: 5px 0px 9px 2px;
+}
+.paragraph--menu-footer-3 {
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Nunito';
+  font-weight: 700;
+  justify-content: flex-start;
+  display: flex;
+  line-height: 1.35;
+  width: 200px;
+  margin: 0px;
+  padding: 5px 0px 9px;
+}
+.paragraph--menu-footer-4 {
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Nunito';
+  font-weight: 700;
+  justify-content: flex-start;
+  display: flex;
+  line-height: 1.35;
+  width: 200px;
+  margin: 0px 0px 0px 60px;
+  padding: 5px 0px 9px;
+}
+.container--titulo-menu {
+margin: auto;
+}
+.container--estante {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+.container--wish {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+.paragraph--estante {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Nunito';
+  font-size: 13px;
+  color: #5b5b5b;
+  height: 17px;
+}
+.image--carrinho-mobile  {
+  padding: 30px 0px 10px 20px;
+}
+.paragraph--carrinho-mobile {
+  margin: 0px;
+}
+.image--search-mobile {
+  padding: 30px 0px 10px 20px;
+}
+.paragraph--search-mobile {
+  margin: 0px;
+}
+
+.container--link .paragraph {
+  text-align: center;
+  max-width: 540px;
+  padding-top: 36px;
+  padding-bottom: 84px;
+  color: #03034E;
+}
+
+.container--link .strong {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container--link .link {
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 300;
+  color: #03034E;
+}
+
+.container--title {
+  color: #03034E;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 640px) {
+  .container--question .strong {
+    font-size: 40px;
+    line-height: 3rem;
+  }
+
+  .container--about {
+    max-width: 85%;
+  }
+
+  .container--title {
+    color: #03034E;
+    font-size: 40px;
+    font-weight: 700;
+    max-width: 60%;
+  }
+
+  .container--title .paragraph {
+    line-height: 1.3em;
+  }
+}
+.paragraph--menu-titulo {
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Nunito';
+  font-weight: 700;
+  margin: 0px  0px  5px 140px;
+
+}
+.paragraph--outros-titulos {
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Nunito';
+  font-weight: 700;
+  margin: 0px  0px  5px 110px;
+}
+.paragraph--formas-pagamento {
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Nunito';
+  margin: 30px  0px 3px;
+}
+.paragraph--credito {
+  color: #fff;
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+}
+.paragraph--rodape-desktop {
+  font-family: 'Nunito';
+  font-size: 12px;
+  color: #fff;
+  margin: 6px 0px 0px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}

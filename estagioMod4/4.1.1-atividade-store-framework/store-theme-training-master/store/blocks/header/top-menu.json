@@ -1,0 +1,138 @@
+{
+  "vtex.menu@2.x:menu#websites": {
+    "children": [
+      "menu-item#sobre",
+      "menu-item#duvidas",
+      "menu-item#contato",
+      "menu-item#meus-space",
+      "menu-item#meus-pedidos",
+      "menu-item#ola-usuario",
+      "login"
+    ]
+  },
+  "menu-item#sobre": {
+    "props": {
+      "blockClass": "topo",
+      "id": "menu-item-sobre",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sobre",
+        "text": "Quem somos"
+      }
+    }
+  },
+  "menu-item#duvidas": {
+    "props": {
+      "blockClass":"topo",
+      "id": "menu-item-duvidas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Duvidas",
+        "text": "Dúvidas"
+      }
+    }
+  },
+  "menu-item#contato": {
+    "props": {
+      "blockClass":"pedidos",
+      "id": "menu-item-contato",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Contato",
+        "text": "Contato"
+      }
+    }
+  },
+  "menu-item#meus-space": {
+    "props": {
+      "blockClass":"space",
+      "id": "menu-item-space",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "noFollow": false,
+        "text": ""
+      }
+    }
+  },
+  "menu-item#meus-pedidos": {
+    "props": {
+      "blockClass":"pedidos",
+      "id": "menu-item-meus-pedidos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Meus pedidos",
+        "text": "Meus Pedidos"
+      }
+    }
+  },
+  "menu-item#ola-usuario": {
+    "props": {
+      "blockClass":"pedidos",
+      "id": "menu-item-ola-usuario",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "ola usuario",
+        "text": "Olá, Usuário."
+      }
+    }
+  },
+  "login": {
+    "props":{
+      "iconLabel": "Login"
+    }
+  },
+
+
+
+
+
+
+
+  "vtex.menu@2.x:menu#institutional": {
+    "children": [
+      "menu-item#vtex-website"
+    ]
+  },
+  "menu-item#vtex-website": {
+    "props": {
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "visit vtex.com",
+        "text": "visit vtex.com"
+     }
+    }
+  }
+}

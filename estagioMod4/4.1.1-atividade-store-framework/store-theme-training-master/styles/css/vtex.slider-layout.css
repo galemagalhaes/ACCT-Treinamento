@@ -1,0 +1,74 @@
+.sliderLayoutContainer {
+  justify-content: center; /*slider produtos*/
+
+}
+.sliderLayoutContainer--carousel {
+  background-color: #fff;
+  max-width: 1260px;
+  width: auto;
+  height: auto;
+  margin: 13px auto;
+
+}
+.sliderArrows--carousel {
+  display: none;
+}
+.imageElement--carousel {
+width: 1260px;
+padding: 0px;
+margin: 0px 80px;
+display: flex;
+justify-content: center;
+align-items: center;
+box-sizing: border-box;
+background: #fff;
+}
+.sliderTrackContainer {
+  max-width: 1260px; /*slider produtos*/
+}
+
+.paginationDotsContainer--carousel {
+ display: none;
+}
+.paginationDotsContainer--shelf {
+  display: none;
+ }
+.layoutContainer--shelf {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 96rem;
+}
+
+.slide--shelf {
+  margin-bottom: 25px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+.paginationDotsContainer--outros-audiobooks {
+  display: none;
+}
+.paginationDotsContainer--booklists {
+  display: none;
+}
+.caretIcon--outros-audiobooks {
+  display: flex;
+  color: #ef8216;
+  margin-bottom: 90px;
+
+}
+.caretIcon--booklists {
+  display: flex;
+  color: #ef8216;
+  margin: 0px;
+}
+.slideChildrenContainer--booklists {
+  margin-bottom: 30px;
+
+}
+.sliderLayoutContainer--booklists {
+  max-width: 1260px;
+}
+
+.sliderLayoutContainer--outros-audiobooks {
+  max-width: 1260px;
+}

@@ -1,0 +1,561 @@
+{
+  "vtex.menu@2.x:menu#meu-perfil": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#titulo-perfil",
+      "menu-item#fazer-login",
+      "menu-item#meu-perfil",
+      "menu-item#meus-audiobooks",
+      "menu-item#meu-carrinho",
+      "menu-item#lista-desejos"
+    ]
+  },
+  "rich-text#titulo-perfil":{
+    "props":{
+      "blockClass":"menu-footer-1",
+      "text":"MEU PERFIL"
+    }
+  },
+  "menu-item#fazer-login": {
+    "props": {
+      "blockClass": "menu-footer-1",
+      "id": "menu-item-fazer-login",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Fazer login",
+        "text": "Fazer Login"
+      }
+    }
+  },
+  "menu-item#meu-perfil": {
+    "props": {
+      "blockClass": "menu-footer-1",
+      "id": "menu-item-meu-perfil",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "meu-perfil",
+        "text": "Meu Perfil"
+      }
+    }
+  },
+  "menu-item#meus-audiobooks": {
+    "props": {
+      "blockClass": "menu-footer-1",
+      "id": "menu-item-meus-audiobooks",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "meus-audiobooks",
+        "text": "Meus Audiobooks"
+      }
+    }
+  },
+  "menu-item#meu-carrinho": {
+    "props": {
+      "blockClass": "menu-footer-1",
+      "id": "menu-item-meu-carrinho",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "meu-carrinho",
+        "text": "Meu Carrinho"
+      }
+    }
+  },
+  "menu-item#lista-desejos": {
+    "props": {
+      "blockClass": "menu-footer-1",
+      "id": "menu-item-minha-lista-desejos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "minha-lista-desejos",
+        "text": "Minha Lista de Desejos"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#footer-auti-books": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#titulo-auti-books",
+      "menu-item#quem-somos",
+      "menu-item#assessoria-imprensa"
+    ]
+  },
+
+  "rich-text#titulo-auti-books":{
+    "props":{
+      "blockClass":"menu-footer-2",
+      "text": "AUTI BOOKS"
+    }
+  },
+  "menu-item#quem-somos": {
+    "props": {
+      "blockClass": "menu-footer-2",
+      "id": "menu-item-quem-somos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/quem-somos/d",
+        "noFollow": true,
+        "tagTitle": "quem-somos",
+        "text": "Quem Somos"
+      }
+    }
+  },
+
+  "menu-item#assessoria-imprensa": {
+    "props": {
+      "blockClass": "menu-footer-2",
+      "id": "menu-item-assessoria-imprensa",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/assessoria-imprensa",
+        "noFollow": false,
+        "tagTitle": "assessoria-imprensa",
+        "text": "Assessoria de Imprensa"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#footer-politicas": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#titulo-politicas",
+      "menu-item#politicas-privacidade",
+      "menu-item#videogames",
+      "menu-item#tvs"
+    ]
+  },
+  "rich-text#titulo-politicas": {
+    "props":{
+      "blockClass":"menu-footer-3",
+      "text":"POLÍTICAS DA EMPRESA"
+    }
+  },
+
+  "menu-item#politicas-privacidade": {
+    "props": {
+      "blockClass": "menu-footer-3",
+      "id": "menu-item-politicas-privacidade",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/politicas-privacidade",
+        "noFollow": true,
+        "tagTitle": "Smartphones",
+        "text": "Políticas de Privacidade"
+      }
+    }
+  },
+
+  "menu-item#videogames": {
+    "props": {
+      "blockClass": "menu-footer-3",
+      "id": "menu-item-videogames",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/videogames",
+        "noFollow": true,
+        "tagTitle": "Videogames",
+        "text": "Termos de Uso"
+      }
+    }
+  },
+
+  "menu-item#tvs": {
+    "props": {
+      "blockClass": "menu-footer-3",
+      "id": "menu-item-tvs",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/tvs",
+        "noFollow": true,
+        "tagTitle": "TVs",
+        "text": "Central de Ajuda (FAQ)"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-bags": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#titulo-appstore",
+      "flex-layout.row#appstores-footer",
+      "rich-text#formas-pagamento",
+      "rich-text#credito",
+      "flex-layout.row#cartoes"
+
+    ]
+  },
+  "rich-text#titulo-appstore": {
+    "props": {
+      "blockClass":"menu-footer-3",
+      "text":"BAIXE O APP"
+    }
+  },
+
+  "flex-layout.row#appstores-footer":{
+    "props":{
+      "blockClass":"appstores-footer",
+      "colGap":0
+    },
+    "children":["flex-layout.col#appstore", "flex-layout.col#googleplay"]
+  },
+  "flex-layout.col#appstore": {
+    "props":{
+      "width": "100%",
+      "blockClass":"appstore"
+    }, "children":["image#appstore"]
+  },
+  "image#appstore": {
+    "props": {
+      "blockClass":"appstore",
+      "src": "assets/icons/storeApple.png"
+    }
+  },
+  "flex-layout.col#googleplay": {
+    "props":{
+      "blockClass":"googleplay",
+      "width": "100%"
+    }, "children":[ "image#googleplay"]
+  },
+  "image#googleplay": {
+    "props": {
+      "blockClass":"googleplay",
+      "src": "assets/icons/googleplay.png"
+    }
+  },
+  "flex-layout.col#formas-pagamento": {
+"props":{
+  "blockClass":"formas-pagamento"
+},"children":["flex-layout.row#cartoes"]
+  },
+"flex-layout.row#cartoes":{
+  "props":{
+    "blockClass":"cartoes"
+  }, "children":[
+    "flex-layout.col#mastercard",
+    "flex-layout.col#visa",
+    "flex-layout.col#elo",
+    "flex-layout.col#amex",
+    "flex-layout.col#hiper"]
+},
+"flex-layout.col#mastercard": {
+  "props":{
+    "blockClass":"cartoes"
+  }, "children":["image#master"]
+},
+"image#master":{
+  "props":{
+  "src":"assets/icons/master.png"
+  }
+},
+"flex-layout.col#visa": {
+  "props":{
+    "blockClass":"cartoes"
+  }, "children":["image#visa"]
+},
+"image#visa":{
+  "props":{
+  "src":"assets/icons/visa.png"
+  }
+},
+"flex-layout.col#elo": {
+  "props":{
+    "blockClass":"cartoes"
+  }, "children":["image#elo"]
+},
+"image#elo":{
+  "props":{
+  "src":"assets/icons/elo.png"
+  }
+},
+"flex-layout.col#amex": {
+  "props":{
+    "blockClass":"cartoes"
+  }, "children":["image#amex"]
+},
+"image#amex":{
+  "props":{
+  "src":"assets/icons/amex.png"
+  }
+},
+"flex-layout.col#hiper": {
+  "props":{
+    "blockClass":"cartoes"
+  }, "children":["image#hiper"]
+},
+"image#hiper":{
+  "props":{
+  "src":"assets/icons/hiper.png"
+  }
+},
+  "menu-item#bags": {
+    "props": {
+      "blockClass": "menu-footer",
+      "id": "app-store",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/d",
+        "noFollow": true,
+        "tagTitle": "app store"
+      }
+    }
+  },
+"rich-text#formas-pagamento": {
+  "props":{
+    "blockClass":"formas-pagamento",
+    "text": "FORMAS DE PAGAMENTO"
+  }
+},
+  "menu-item#formas-de-pagamento": {
+    "props": {
+      "blockClass": "baixe-app",
+      "id": "menu-item-backpacks",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/backpacks",
+        "noFollow": true,
+        "tagTitle": "Backpacks",
+        "text": "FORMAS DE PAGAMENTO"
+      }
+    }, "children":["rich-text#credito"]
+  },
+"rich-text#credito": {
+  "props":{
+    "blockClass":"credito",
+    "text": "Crédito"
+  }
+},
+"vtex.menu@2.x:menu#menu-social-media": {
+  "props": {
+    "orientation": "vertical"
+  },
+  "children": [
+    "rich-text#titulo-social-networks",
+    "flex-layout.row#social-networks"
+  ]
+},
+"rich-text#titulo-social-networks": {
+  "props":{
+    "blockClass":"menu-footer-4",
+    "text": "SIGA-NOS"
+  }
+},
+
+
+
+
+
+
+
+
+
+
+
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children":["logo#mobile"]
+
+  },
+
+  "menu-item#clothing-mobile": {
+    "props": {
+
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Clothing",
+        "text": "Clothing"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
+  },
+  "vtex.menu@2.x:submenu.accordion#clothing": {
+    "children": ["vtex.menu@2.x:menu#clothing-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#clothing-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+
+      "menu-item#tank-tops",
+      "menu-item#shirts",
+      "menu-item#sweatshirt",
+      "menu-item#cropped"
+    ]
+  },
+
+  "menu-item#decoration-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Decoration",
+        "text": "Decoration"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#decoration"]
+  },
+  "vtex.menu@2.x:submenu.accordion#decoration": {
+    "children": ["vtex.menu@2.x:menu#footer-decoration-mobile"]
+  },
+
+  "vtex.menu@2.x:menu#footer-decoration-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+
+      "menu-item#videogames",
+      "menu-item#tvs"
+    ]
+  },
+
+  "menu-item#sale-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Sale",
+        "text": "Sale"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#sale"]
+  },
+  "vtex.menu@2.x:submenu.accordion#sale": {
+    "children": ["vtex.menu@2.x:menu#footer-sale-mobile"]
+  },
+
+  "vtex.menu@2.x:menu#footer-sale-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+
+      "menu-item#videogames",
+      "menu-item#tvs"
+    ]
+  },
+
+
+  "menu-item#tank-tops": {
+    "props": {
+      "blockClass": "menu-footer",
+      "id": "menu-item-tank-tops",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/tank-tops",
+        "noFollow": false,
+        "tagTitle": "Tank tops",
+        "text": "Tank tops"
+      }
+    }
+  },
+
+  "menu-item#shirts": {
+    "props": {
+      "blockClass": "menu-footer",
+      "id": "menu-item-shirts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/shirts",
+        "noFollow": false,
+        "tagTitle": "Shirts",
+        "text": "Shirts"
+      }
+    }
+  },
+
+  "menu-item#sweatshirt": {
+    "props": {
+      "blockClass": "menu-footer",
+      "id": "menu-item-sweat-shirts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/sweatshirt",
+        "noFollow": false,
+        "tagTitle": "Sweatshirt",
+        "text": "Sweatshirt"
+      }
+    }
+  },
+
+  "menu-item#cropped": {
+    "props": {
+      "blockClass": "menu-footer",
+      "id": "menu-item-cropped",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/cropped",
+        "noFollow": false,
+        "tagTitle": "Cropped",
+        "text": "Cropped"
+      }
+    }
+  }
+}

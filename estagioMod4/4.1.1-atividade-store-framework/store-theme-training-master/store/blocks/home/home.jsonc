@@ -1,0 +1,276 @@
+{
+  "store.home": {
+    "blocks": [
+      "responsive-layout.mobile#home",
+      "list-context.image-list#demo",
+
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "__fold__.experimentalLazyAssets",
+     // "flex-layout.row#deals",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      "flex-layout.row#outros-audiobooks-titulo",
+      "flex-layout.row#outros-audiobooks",
+      "info-card#home",
+      "flex-layout.row#booklist-titulo",
+      "flex-layout.row#booklists",
+      "rich-text#label-newsletter",
+      "newsletter"
+    ]
+  },
+  "newsletter": {
+    "props": {
+      "blockClass": "news",
+      "placeholder": "Digite seu e-mail"
+
+    }
+  },
+  "rich-text#label-newsletter": {
+    "props":{
+      "blockClass": "label-news",
+      "text": "### PROCURANDO PELO SEU PRÓXIMO AUDIOBOOK?\nReceba indicações personalizadas baseadas nos audiobooks que você já comprou"
+    }
+  },
+
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "blockClass":"carousel",
+      "height": "grow",
+     //"width": 1260,
+      "images": [
+        {
+          "image": "assets/img/carrossel.png",
+          "mobileImage": "assets/img/banner-mobile.png"
+        },
+        {
+          "image": "assets/img/carrossel.png",
+          "mobileImage": "assets/img/banner-mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel",
+      "fullWidth": true
+    }
+  },
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## É hora de começar a ouvir\n Escolha abaixo e ouça",
+      "blockClass": "shelfTitle"
+    }
+  },
+   "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "flex-layout.row#outros-audiobooks": {
+    "children": ["list-context.image-list#outros-audiobooks"],
+    "props":{
+      "blockClass":"outros-audiobooks"
+    }
+  },
+  "list-context.image-list#outros-audiobooks": {
+    "children":["slider-layout#outros-audiobooks"],
+    "props":{
+      "height": 200,
+      "images":[
+        {
+          "image":"assets/img/audiobook-O-segredo.png"
+        },
+        {
+          "image":"assets/img/audiobook-O-livro-dos-ressignificados.png"
+        },
+        {
+          "image":"assets/img/audiobook-A-guerra-nao-tem-rosto-de-mulher.png"
+        },
+        {
+          "image":"assets/img/audiobook-Um-coracao-ardente.png"
+        },
+        {
+          "image":"assets/img/audiobook-O-poder-do-habito.png"
+        },
+        {
+          "image":"assets/img/audiobook-Alice-no-Pais-das-Maravilhas.png"
+        },
+        {
+          "image":"assets/img/audiobook-A-sombra-do-vento.png"
+        },
+        {
+          "image":"assets/img/audiobook-Mindset.png"
+        },
+        {
+          "image":"assets/img/audiobook-Chapeuzinho-Vermelho.png"
+        },
+        {
+          "image":"assets/img/audiobook-Sociedade-do-cansaco.png"
+        },
+        {
+          "image":"assets/img/Memorias-de-um-sargento-de-milicias.png"
+        },
+        {
+          "image":"assets/img/audiobook-O-monge-que-vendeu-sua-Ferrari.png"
+        },
+        {
+          "image":"assets/img/audiobook-A-revolucao-dos-bichos.png"
+        },
+        {
+          "image":"assets/img/audiobook-Longe-de-casa.png"
+        },
+        {
+          "image":"assets/img/audiobook-Enclausurado.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#outros-audiobooks": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "outros-audiobooks"
+    }
+
+  },
+  "flex-layout.row#outros-audiobooks-titulo":{
+    "children":["rich-text#outros-audiobooks"],
+    "props":{
+
+      "blockClass":"outros-audiobooks-titulo"
+    }
+  },
+  "rich-text#outros-audiobooks": {
+    "props": {
+      "textAlignment":"Center",
+      "text": "## Outros Audiobooks\nEscolha abaixo e ouça",
+      "blockClass": "outros-audiobooks-titulo"
+    }
+  },
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "imageUrl": "assets/img/banners-inferior-desktop.png",
+      "mobileImageUrl":"assets/img/banners-mob.png",
+      "blockClass": "info-card-home"
+    }
+  },
+  "flex-layout.row#booklists": {
+    "children": ["list-context.image-list#booklists"],
+    "props":{
+      "blockClass":"booklists"
+    }
+  },
+  "list-context.image-list#booklists": {
+    "children":["slider-layout#booklists"],
+    "props":{
+      "height": 200,
+      "images":[
+        {
+          "image":"assets/img/bl-para-ficar-rico.png"
+        },
+        {
+          "image":"assets/img/playlist-debater-2.png"
+        },
+        {
+          "image":"assets/img/playlist-pressa.png"
+        },
+        {
+          "image":"assets/img/bl-refletindo-sobre-a-vida.png"
+        },
+        {
+          "image":"assets/img/para-ser-fda.png"
+        },
+        {
+          "image":"assets/img/pura-diversao.png"
+        },
+        {
+          "image":"assets/img/para-tomar-sustos.png"
+        },
+        {
+          "image":"assets/img/para-o-coracao-bater-forte.png"
+        },
+        {
+          "image":"assets/img/para-se-aventurar.png"
+        },
+        {
+          "image":"assets/img/personagens-que-inspiram.png"
+        },
+        {
+          "image":"assets/img/classicos-que-nunca-morrem.png"
+        },
+        {
+          "image":"assets/img/para-ouvir-com-a-familia.png"
+        },
+        {
+          "image":"assets/img/para-levantar-o-astral.png"
+        },
+        {
+          "image":"assets/img/dando-a-volta-ao-mundo.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#booklists": {
+
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "booklists"
+    }
+
+  },
+  "flex-layout.row#booklist-titulo": {
+    "props":{
+      "blockClass":"booklists-titulo"
+    }, "children":["rich-text#booklists"]
+  },
+  "rich-text#booklists": {
+    "props": {
+      "textAlignment":"Center",
+      "text": "## Booklists\nPra encontrar o que o seu humor está pedindo",
+      "blockClass": "booklists"
+    }
+  }
+
+
+}

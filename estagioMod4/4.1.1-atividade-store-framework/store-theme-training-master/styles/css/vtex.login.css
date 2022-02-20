@@ -1,0 +1,50 @@
+@media(max-width: 640px){
+.container .container :global(.vtex-button):hover{
+  max-width: 20px;
+  max-width: 0.7em;
+
+}
+}
+
+
+
+.container {
+background: #ef8216;
+border-radius: 50px;
+display: flex;
+line-height: 25px;
+max-width: 88px;
+padding: 0 25px;
+height: 25px;
+width: 100%;
+margin:  auto;
+justify-content: center;
+}
+.container :global(.vtex-button):hover {
+  background: #ef8216;
+  border-radius: 50px;
+  display: flex;
+  max-width: 88px;
+  padding: 0 25px;
+  height: 25px;
+  min-height: auto!important;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+}
+
+.buttonLink {
+  display: none;
+}
+.label {
+  color: #fff;
+  font-family: 'Nunito';
+  text-transform: capitalize;
+  font-size: 16px;
+  font-stretch: normal;
+  font-weight: 400;
+  height: 18px;
+  padding:4px 2px 2px ;
+  margin: 0px 1px;
+}
+

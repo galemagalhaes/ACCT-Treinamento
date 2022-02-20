@@ -1,0 +1,19 @@
+.row--menu-row {
+  padding-right: 24px;
+}
+
+.row--menu-row .rowContainer {
+  align-items: flex-start;
+
+}
+
+.row--payment-methods {
+  padding-top: 16px;
+}
+.socialNetworksTitle {
+  font-family: 'Nunito';
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff
+}
+

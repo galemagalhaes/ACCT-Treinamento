@@ -1,0 +1,236 @@
+/*SEARCH-BAR*/
+.searchBarContainer {
+  display: flex;
+  align-items: flex-end;
+}
+
+/*botão searchbar*/
+.autoCompleteOuterContainer--busca :global(.vtex-input__suffix){
+background: #ef8216;
+width: 30px;
+background-image: url("assets/icons/icon-search.png");
+background-repeat: no-repeat;
+background-position: 50%;
+}
+/*forma inteira searchbar*/
+.autoCompleteOuterContainer :global(.vtex-input-prefix__group) {
+  border-bottom-left-radius: 24px;
+  border-top-left-radius: 24px;
+  border-bottom-right-radius: 17px;
+  border-top-right-radius: 17px;
+  height: 48px;
+  width: 525px;
+  border: none;
+  background-color: #e8e8e8;
+}
+.autoCompleteOuterContainer--busca ::placeholder {
+font-family: 'Nunito';
+}
+.searchIcon{
+  display: none;
+}
+
+
+.logoImage--logo-auti {
+  width: 100%;
+  max-width: 116px;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+}
+.container--main-header {
+  background-color: #000;
+}
+.infoCardContainer--info-card-home {
+  max-width: 1520px;
+  margin: auto;
+  background-color: #fff;
+  padding: 0px;
+  justify-content: center;
+  display: flex;
+}
+.infoCardImageContainer--info-card-home {
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+}
+.infoCardTextContainer {
+  display: none;
+}
+.infoCardImage--info-card-home {
+  max-width: 1240px;
+}
+.container--menu-row {
+  width: 1260px;
+}
+
+
+/*NEWSLETTER*/
+/*input news letter*/
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
+  background: url("assets/icons/icon-emailcinza.png") 0 50% no-repeat;
+  padding: 1px 0px 1px 42px;
+  font-family: 'Nunito';
+  font-size: inherit;
+}
+/*texto botão news letter*/
+.buttonContainer--news :global(.vtex-button__label){
+  color: #ef8216;
+  font-size: 12px;
+  text-align: right;
+  width: 10%;
+  height: 47px;
+}
+/*botão news letter*/
+.buttonContainer--news {
+  background: #e8e8e8;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.container--news {
+  background: #fff;  /*amarelo aqui*/
+  display: flex;
+  padding: 0px!important;
+  margin: 0px;
+  }
+
+.newsletter--news {
+  background-color: #fff; /*vermelho aqui*/
+  padding: 5px;
+  color: #212529;
+  margin: 0px auto 90px;
+  display: flex;
+  width: 735px;
+}
+.inputGroup--news :global(.vtex-input-prefix__group){
+  border-bottom-left-radius: 24px;
+  border-top-left-radius: 24px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-color: #e8e8e8;
+  height: 47px;
+  background-color: #e8e8e8;
+  padding: 0px 25.2px;
+  display: flex;
+  width: auto;
+}
+
+/*texto news letter*/
+.label--news {
+  color: #5a5a5a;
+  font-family: 'Nunito';
+  font-size: 12px;
+  font-weight: 700;
+  display: none;
+}
+.inputGroup--news {
+  margin: 0px;
+  display: flex;
+  width: 724px;
+}
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+  color: #5a5a5a;
+  font-size: 16px;
+  display: flex;
+}
+.imageElement--social-networks {
+ height: 15px;
+margin-top: 6.5px;
+margin-bottom: 6.5px;
+}
+
+
+
+.imageElement--storePrint {
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+.skuSelectorContainer {
+  margin: 1rem 0;
+}
+
+/*@media only screen and (max-width: 640px) {
+  .newsletter--news .container--news {
+    padding: 10px;
+    max-width: 300px;
+  }
+
+  .label {
+    font-size: 40px;
+  }
+
+
+
+  .infoCardContainer--info-card-home  {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 0px;
+   height: auto;
+  }
+  .imageElement--storePrint {
+    margin-bottom: 0px;
+    max-height: 600px;
+  }
+  .inputGroup--news :global(.vtex-input-prefix__group){
+    max-width: auto;
+  }
+
+}*/
+.infoCardCallActionContainer {
+  display: none;
+}
+.productImagesContainer--quickview .carouselContainer {
+  justify-content: center;
+}
+
+.productImagesContainer--quickview .productImageTag {
+  object-fit: cover !important;
+}
+
+.productImagesContainer--quickview .carouselGaleryThumbs {
+  display: none;
+}
+
+.productImagesContainer--quickview .carouselGaleryCursor {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.productNameContainer {
+  color: #3f3f40;
+  font-weight: bold;
+  font-size: 30px;
+}
+.imageElement--outros-audiobooks {
+  max-width: 130px;
+  margin: 2px auto 100px;
+}
+.imageElement--booklists {
+  max-width: 200px;
+  margin: auto;
+}
+.imageElement--appstore {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0px;
+  padding: 0px;
+}
+.imageElement--googleplay {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0px;
+  padding: 0px;
+}
+
+.imageElement--vtex-footer{
+  width: 94px;
+  height: 48px;
+}

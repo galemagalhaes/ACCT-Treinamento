@@ -1,0 +1,174 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#categorias",
+      "menu-item#categoria-autoajuda",
+      "menu-item#categoria-bio",
+      "menu-item#categoria-fic",
+      "menu-item#categoria-historia",
+      "menu-item#categoria-negocios",
+      "menu-item#categoria-poesia",
+      "menu-item#categoria-suspense",
+      "menu-item#categoria-auti-best"
+    ]
+  },
+  "menu-item#categorias": {
+    "props": {
+      "blockClass": "menu-categorias",
+
+      "id": "menu-categorias",
+      "type": "custom",
+      "iconId": "submenu",
+      "iconPosition": "left",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Categorias",
+        "text": "Categorias"
+      }
+    }
+  },
+
+  "flex-layout.col#spacer-menu-categoria": {
+    "props": {
+     "blockClass":"menu-categorias"
+    }
+  },
+  "menu-item#categoria-autoajuda": {
+    "props": {
+      "blockClass": "categorias",
+      "id": "menu-item-categoria-autoajuda",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+
+        "noFollow": false,
+        "tagTitle": "Autoajuda",
+        "text": "Autoajuda"
+      }
+    }
+  },
+
+  "menu-item#categoria-bio": {
+    "props": {
+      "blockClass":"categorias",
+      "id": "menu-item-categoria-bio",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Biografia",
+        "text": "Biografia"
+      }
+    }
+  },
+  "menu-item#categoria-fic": {
+    "props": {
+      "blockClass":"categorias",
+      "id": "menu-item-categoria-fic",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Ficção",
+        "text": "Ficção"
+      }
+    }
+    },
+    "menu-item#categoria-historia": {
+      "props": {
+        "blockClass":"categorias",
+        "id": "menu-item-categoria-historia",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": true,
+          "tagTitle": "Historia",
+          "text": "História"
+        }
+
+
+    }
+
+  },
+
+  "menu-item#categoria-negocios": {
+    "props": {
+      "blockClass":"categorias",
+      "id": "menu-item-categoria-negocios",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Negócios",
+        "text": "Negócios"
+      }
+    }
+    },
+    "menu-item#categoria-poesia": {
+      "props": {
+        "blockClass":"categorias",
+        "id": "menu-item-categoria-poesia",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": true,
+          "tagTitle": "Poesia",
+          "text": "Poesia"
+        }
+      }
+      },
+      "menu-item#categoria-suspense": {
+        "props": {
+          "blockClass":"categorias",
+          "id": "menu-item-categoria-suspense",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": true,
+            "tagTitle": "Suspense",
+            "text": "Suspense"
+          }
+        }
+        },
+        "menu-item#categoria-auti-best": {
+          "props": {
+            "blockClass":"categorias",
+            "id": "menu-item-categoria-auti-best",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": true,
+              "tagTitle": "Auti Best",
+              "text": "Auti Best"
+            }
+          }
+          }
+}

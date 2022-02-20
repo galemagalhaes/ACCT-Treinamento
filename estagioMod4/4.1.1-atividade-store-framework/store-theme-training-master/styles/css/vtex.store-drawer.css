@@ -1,0 +1,10 @@
+.menuIcon {
+  color: #ffffff;
+  display: flex;
+  align-content: flex-end;
+  padding: 30px 20px 10px 0px;
+}
+.openIconContainer--menu-drawer {
+  padding: 0px;
+  margin: 0px;
+}

@@ -1,0 +1,268 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#1-desktop",
+      "flex-layout.row#2-desktop",
+      "flex-layout.row#3-desktop"
+    ]
+  },
+  "flex-layout.row#1-desktop": {
+    "props": {
+      "blockClass": "menu-link",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+
+      "vtex.menu@2.x:menu#websites"
+
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.row#2-desktop": {
+    "children": [
+      "flex-layout.col#logo-auti-desktop",
+      "search-bar",
+      "flex-layout.col#menu-compra"
+    ],
+    "props": {
+      "blockClass": "header2",
+      "fullWidth": "true"
+    }
+  },
+  "search-bar": {
+    "props":{
+      "blockClass": "busca",
+      "width": "50%",
+      "placeholder": "Buscar por audiobook, editora, etc...."
+    }
+  },
+  "flex-layout.col#logo-auti-desktop": {
+    "props": {
+      "blockClass": "logo",
+      "verticalAlign": "middle",
+      "width": "25%"
+    },
+    "children": ["logo#desktop"]
+  },
+  "logo#desktop": {
+    "props": {
+      "blockClass":"logo-auti",
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/img/logo-auti.png"
+    }
+  },
+  "flex-layout.col#menu-compra": {
+    "props":{
+      "blockClass": "menu-compra"
+    },
+    "children":["flex-layout.row#menu-compra-container"]
+  },
+  "flex-layout.row#menu-compra-container": {
+    "props": {
+      "blockClass": "menu-compra-container"
+    },
+    "children":[
+      "flex-layout.col#estante",
+      "flex-layout.col#lista-desejos",
+      "flex-layout.col#carrinho"
+
+    ]
+  },
+  "flex-layout.col#estante": {
+    "props":{
+      "blockClass": "estante",
+      "width":25
+    },
+    "children":[
+      "rich-text#estante-icon",
+      "rich-text#estante-texto"]
+  },
+  "rich-text#estante-icon": {
+      "props": {
+        "blockClass": "estante",
+        "text": "![estante](assets/icons/icon-estante.png)"
+      }
+  },
+  "rich-text#estante-texto": {
+    "props":{
+      "blockClass": "estante",
+      "text": "Estante"
+    }
+  },
+  "flex-layout.col#lista-desejos": {
+    "props":{
+      "blockClass": "estante"
+    },
+    "children":[
+      "rich-text#lista-desejos-icon",
+      "rich-text#lista-desejos-texto"
+    ]
+  },
+  "rich-text#lista-desejos-icon": {
+      "props": {
+        "blockClass": "estante",
+        "text": "![wishlist](assets/icons/icon-wishlist.png)"
+      }
+  },
+  "rich-text#lista-desejos-texto": {
+    "props":{
+      "blockClass":"estante",
+      "text": "Lista de Desejos"
+    }
+  },
+  "flex-layout.col#carrinho": {
+    "props":{
+      "blockClass": "estante"
+    },
+    "children":[
+      "rich-text#carrinho-icon",
+      "rich-text#carrinho-texto"]
+  },
+  "rich-text#carrinho-icon": {
+      "props": {
+        "blockClass": "estante",
+        "text": "![cart](assets/icons/icon-minicart.png)"
+      }
+  },
+  "rich-text#carrinho-texto": {
+    "props":{
+      "blockClass": "estante",
+      "text": "Carrinho"
+    }
+  },
+
+
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": false,
+      "fullWidth": true
+
+    },
+    "children": [
+      "flex-layout.col#category-menu"
+    ]
+  },
+
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
+
+
+    "header-layout.mobile": {
+    "children": [
+      "flex-layout.row#topo-mobile",
+      "flex-layout.row#1-mobile"
+    ]
+  },
+  "flex-layout.col#header-mobile-drawer": {
+    "children":["drawer"],
+    "props":{
+      "blockClass":"drawer-mobile",
+      "width": "20%"
+    }
+  },
+  "flex-layout.col#header-mobile-logo": {
+    "children":["logo#mobile"],
+    "props":{
+      "blockClass":"logo-mobile",
+      "width": "70%"
+    }
+  },
+  "flex-layout.col#header-mobile-carrinho": {
+    "children":["rich-text#carrinho-icon-mobile"],
+    "props":{
+      "blockClass":"carrinho-mobile",
+      "width": "20%"
+    }
+  },
+  "flex-layout.col#icon-search":{
+    "children":["rich-text#search-mobile"],
+    "props":{
+      "blockClass":"search-mobile",
+      "width": "20%"
+    }
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "flex-layout.col#header-mobile-drawer",
+      "flex-layout.col#header-mobile-logo",
+      "flex-layout.col#header-mobile-carrinho",
+      "flex-layout.col#icon-search"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": false,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#topo-mobile": {
+"props":{
+  "blockClass":"topo-mobile",
+  "fullWidth":true
+},
+"children":["login#mobile"]
+  },
+
+  "drawer": {
+    "props":{
+      "blockClass":"menu-drawer"
+    },
+    "children": ["menu#drawer"]
+  },
+
+  "menu#drawer": {
+    "children": [
+      "menu-item#categorias",
+      "menu-item#categoria-autoajuda",
+      "menu-item#categoria-bio",
+      "menu-item#categoria-fic",
+      "menu-item#categoria-historia",
+      "menu-item#categoria-negocios",
+      "menu-item#categoria-poesia",
+      "menu-item#categoria-suspense",
+      "menu-item#categoria-auti-best"
+
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "blockClass":"logo-mobile",
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/icons/logo-auti-mobile.png"
+
+    }
+  },
+  "rich-text#search-mobile":{
+    "props":{
+      "blockClass":"search-mobile",
+      "text":"![cart](assets/icons/icon-search.png)"
+    }
+  }
+}
