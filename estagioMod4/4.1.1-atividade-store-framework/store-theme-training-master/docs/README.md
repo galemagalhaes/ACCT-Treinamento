@@ -1,4 +1,10 @@
-# Store theme
+# **VTEX IO - STORE FRAMEWORK - Store Theme**
+A atividade foi feita com base no tema VTEX desenvolvido e disponibilizado na trilha de treinamento, cujas informações estão a seguir apresentadas:
+> ------------------------------------
+> ------------------------------------
+
+
+## Store theme
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
