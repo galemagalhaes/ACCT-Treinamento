@@ -32,7 +32,7 @@ function App() {
       <div className='principal'>
         <span className='imagem'>{ <h1 className={`frase_${contNumero[contNumero.length - 1]}`}>{myVariable}</h1>}</span>
         <div className='div-relogio'><h2 className='txt-relogio'>{momentoDaConsulta}</h2></div>
-        <div className='div-botao'><button className='btn-troca-efeito' onClick={() => clicou()}>Novo layout</button></div>
+        <div className='div-botao'><button className='btn-troca-efeito' onClick={() => clicou()}>Trocar</button></div>
       </div>
     </>
   );
