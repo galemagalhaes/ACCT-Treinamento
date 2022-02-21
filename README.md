@@ -15,9 +15,9 @@
   * 1.4.1 - JavaScript - Calculadora - Tópico com exercício 
 
 ### Exercícios do módulo 1
-- [x] [Exercício 1](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod1/grid) - CSS Grid feito na site Grid Garden.
-- [x] [Exercício 2](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod1/flexbox) - CSS Flexbox feito no site Flexbox Froggy.
-- [x] [Exercício 3](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod1/calculadora2) - Calculadora
+- [x] [Exercício 1](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod1/1.3.1-grid) - CSS Grid feito na site Grid Garden.
+- [x] [Exercício 2](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod1/1.3.2-flexbox) - CSS Flexbox feito no site Flexbox Froggy.
+- [x] [Exercício 3](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod1/1.4.1-javascript-calculadora/calculadora2) - Calculadora
 
 ---
 > ## **Módulo 2**
@@ -34,7 +34,7 @@
 
 ### Exercícios do módulo 2
 - [ ] [Exercício]() - React - desafio prático
-- [x] [Exercício](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod2/APIs-VTEX) - APIs VTEX - Request no Postman
+- [x] [Exercício](https://github.com/galemagalhaes/ACCT-Treinamento/blob/main/estagioMod2/2.6.1-APIs-VTEX/exercAPI-VTEX.md) - APIs VTEX - Request no Postman
 
 ---
 > ## **Módulo 3**
@@ -46,8 +46,8 @@
 - [x] 3.3 - VTEX IO: Conceitos - Tópico com exercício 
 
 ### Exercícios do módulo 3
-- [x] [Exercício]() - Onboarding VTEX
-- [x] [Exercício]() - VTEX IO
+- [x] [Exercício](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod3/3.2-OnboardingVTEX) - Onboarding VTEX
+- [x] [Exercício](https://github.com/galemagalhaes/ACCT-Treinamento/blob/main/estagioMod3/3.3-VTEX-IO/vtex-io.md) - VTEX IO
 
 ---
 > ## **Módulo 4**
@@ -58,7 +58,7 @@
   * 4.1.1 - VTEX IO - Store Framework Training - Tópico com exercício
 
 ### Exercícios do módulo 4
-- [x] [Exercício]() - Store Framework Training
+- [x] [Exercício](https://github.com/galemagalhaes/ACCT-Treinamento/tree/main/estagioMod4/4.1.1-atividade-store-framework/store-theme-training-master) - Store Framework Training
 
 ---
 > ## **Módulo 5**
