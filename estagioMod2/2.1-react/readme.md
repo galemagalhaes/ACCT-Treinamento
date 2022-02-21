@@ -35,5 +35,7 @@ Criar um app que exiba a frase `Hello World!` em 10 formas diferentes e também 
 
 Mais informações podem ser consultadas [neste link](https://create-react-app.dev/docs/getting-started/)
 
-Usado JSX
-reset css site da alura https://www.alura.com.br/artigos/o-que-e-reset-css?gclid=CjwKCAiA6seQBhAfEiwAvPqu12yQxMp-6kURdf1Ka3TGeWDv6Yu9CqZe1uEteX3IXpHxxLrvwmiDQBoC4qUQAvD_BwE
+
+Foi usado um trecho de código pronto para resetar o css que é entregue na criação do projeto e permitir que o css do `App.js` não sofra interferência do css principal. O código disponível no site da [alura](https://www.alura.com.br/artigos/o-que-e-reset-css?gclid=CjwKCAiA6seQBhAfEiwAvPqu12yQxMp-6kURdf1Ka3TGeWDv6Yu9CqZe1uEteX3IXpHxxLrvwmiDQBoC4qUQAvD_BwE) foi colocado no documento `index.css` 
+
+[Aqui](https://pt-br.reactjs.org/docs/introducing-jsx.html) há informações sobre a sintaxe JSX.
