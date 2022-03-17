@@ -1,0 +1,67 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:v="urn:schemas-microsoft-com:vml">
+<!-- partial:partials/html-head.hbs -->
+<!-- partial -->
+
+<body>
+  <table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 640px">
+    <tr>
+      <td align="center" valign="top">
+        <table class="header-aqui" width="100%" align="center" border="0" cellpadding="0">
+          <!-- Header -->
+          <!-- partial:partials/header.hbs -->
+          <!-- partial -->
+          <tr>
+            <td class="pa4" style="display: flex;justify-content: center;">
+              <img class="w-100"
+                src="https://acctglobal.vteximg.com.br/arquivos/ids/181531/gm-pagto-aprovado-hering.png"
+                style="width: 453px;height: 54px; margin:auto" />
+            </td>
+          </tr>
+
+          <!-- Intro message -->
+          <tr>
+            <td class="intro-messege" style="font-weight: normal;font-size: 12px;line-height: 16px; color: #000000;
+                padding-left: 98px;padding-right: 92px;">
+                
+              <p>((i18n.payment.approved)), {{clientProfileData.firstName}} :) </p><br>
+              <p>((i18n.payment.preparingShippingOneProduct)) </p>
+              
+              <p>((i18n.invoice.invoiceMessage))</p><br>
+
+              <p style="color:#ff00d4; font-size:16px;">
+                {{#eq paymentData.transactions.0.payments.0.paymentSystemName "BOLBRADESCO"}}
+                Obrigado por não da calote, continue sem nos dar prejuizo e nos enriquecendo!
+                {{/eq}}
+              </p>
+            </td>
+          </tr>
+
+
+
+
+
+          <!-- partial:partials/order-summary.hbs -->
+          <!-- partial -->
+
+          <tr>
+            <td class="tc pa4" style="padding:0px;">
+              <button class="access-order-button" style="border: none;   
+                display:flex; justify-content:left; margin-left:88px; margin-bottom:50.5px; ">
+                <a style="height:22px;font-weight:400;font-size:16px;color:#000;text-decoration:underline">
+                  ((i18n.order.accessOrder))
+                </a>
+              </button>
+            </td>
+          </tr>
+          <!-- partial:partials/footer.hbs -->
+          <!-- partial -->
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

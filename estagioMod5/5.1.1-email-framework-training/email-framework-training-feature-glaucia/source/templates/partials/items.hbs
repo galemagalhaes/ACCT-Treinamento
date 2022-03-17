@@ -1,0 +1,50 @@
+<tr>
+  <td class="w-100 ph4 pv2" style="padding: 0px;">
+    <table class="produto" style="margin-left: 73px;">
+      <tr>
+        <td class="pb2" style="margin:0px;padding:0px; display:flex">
+          <p class="itens-pedido"
+            style="font-weight: 600;font-size: 14px;line-height: 19px;width:109px;  display:flex;margin: 12px 0 12px 25px;">
+            ((i18n.order.order))</p>
+        </td>
+      </tr>
+      {{#each items}}
+      <tr class="bb bt b--white" style="display: flex;    margin-left: 25px;">
+        <td class="v-top pv2 w3" style="padding: 0px; display:flex;width:77px;">
+          <img class="itemsImageSize mw-none" alt="" src="{{imageUrl}}" 
+          style="width: 77px; height:110px; margin-bottom:31px;display:flex;" /></td>
+        <td class="v-top pa2" style="padding: 0px;margin-left:14px;">
+          <div class="f6-l lh-copy pt1 black"
+            style="color: #000000;font-size: 12px;line-height: 16px;font-weight:400; margin-bottom:12px;padding:0px;">
+            {{name}}</div>
+
+          <div style="color: #000000;font-size: 12px;line-height: 16px;font-weight:400; ">
+            {{#if sellingPrice}}
+            {{quantity}} ((i18n.common.units)) ((i18n.common.currency)) {{formatCurrency sellingPrice}}
+            {{else}}
+            ((i18n.common.free))
+            {{/if}}
+          </div>
+        </td>
+      </tr>
+      {{#each bundleItems}}
+      {{#if name}}
+      <tr class="bb b--white">
+        <td class="v-top pv2 w3"><img class="itemsImageSize mw-none" alt="" src="{{imageUrl}}" /></td>
+        <td class="v-top pv2">
+          <div class="f6-l lh-copy pt1 black">{{name}}</div>
+          <div class="b f6-l pt1" style="color: #68478D">
+            {{#if price}}
+            ((i18n.common.currency)) {{formatCurrency price}}
+            {{else}}
+            ((i18n.common.free))
+            {{/if}}
+          </div>
+        </td>
+      </tr>
+      {{/if}}
+      {{/each}}
+      {{/each}}
+    </table>
+  </td>
+</tr>

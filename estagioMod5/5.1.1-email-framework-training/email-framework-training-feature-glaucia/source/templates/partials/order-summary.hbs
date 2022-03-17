@@ -1,0 +1,39 @@
+<tr>
+  <td class="resumo-pedido" style="padding: 0px; ">
+      <p class="resumo-pedido" style="font-weight: 600;font-size: 14px;line-height: 19px; display:flex; padding-left:73px; color:#000000;margin-left:25px;">
+        ((i18n.shipping.summaryTitle))</p>
+      <p class="resumo-pedido" style="font-weight: 400;font-size: 12px;line-height: 19px; display:flex; padding-left:73px; color:#000000;margin-left:25px;">
+        ((i18n.order.reference)) {{orderId}}</p>
+      <p class="resumo-pedido" style="font-weight: 400;font-size: 12px;line-height: 19px; display:flex; padding-left:73px; color:#000000;margin-left:25px;">
+        ((i18n.payment.totalPrice)) ((i18n.common.currency)) {{formatCurrency value}} </p>
+      <p class="resumo-pedido" style="font-weight: 400;font-size: 12px;line-height: 19px; display:flex; padding-left:73px; color:#000000;margin:0 0 31px 25px;">
+        ((i18n.order.orderPlaced)) {{formatDate creationDate}}</p>
+  </td>
+</tr>
+<tr>
+  <!-- partial:payment.hbs -->
+      <!-- partial -->
+</tr>
+<tr>
+  <td class="lh-solid ph4 pb3" style="padding: 0px;">
+      
+      
+      <p style="font-size: 12px;line-height: 16px;color: #000000; margin: 0 0 0 25px;padding-left:73px">
+        ((i18n.shipping.address)){{shippingData.address.street}}, {{shippingData.address.number}}</p>
+      <p style="font-size: 12px;line-height: 16px;color: #000000; margin: 0 0 0 25px;padding-left:73px">
+        {{shippingData.address.neighborhood}} - {{shippingData.address.city}} - {{shippingData.address.state}} ((i18n.shipping.postalCode)) {{shippingData.address.postalCode}}</p>
+     
+  </td>
+<tr>
+  <td class="ph4" style="padding: 0px;">
+      <p style="font-size: 12px; font-weight:600; line-height: 16px;color: #000000; margin: 0 0 0 25px;padding: 16px 0px 16px 73px ;">((i18n.shipping.scheduled))  {{parseMyInt shippingData.logisticsInfo.0.slas.0.shippingEstimate}} ((i18n.shipping.businessDays))</p>
+      
+  </td>
+</tr>
+
+<!-- partial:items.hbs -->
+<!-- partial -->
+
+
+
+

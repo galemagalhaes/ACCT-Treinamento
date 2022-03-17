@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form class="form-example">
+        <div class="form-example__container">
+            <div class="form-example__box">
+                <label for="Produto">SKU Produto Avaliado</label>
+                <input type="text" name="Produto" class="form-sku" />
+            </div>
+            <div class="form-example__box">
+                <label for="Cliente">Nome do Usuário Avaliador</label>
+                <input type="text" name="Cliente" class="form-usuario" />
+            </div>
+            <div class="form-example__box">
+              <label for="Data">Data da Avaliação</label>
+              <input type="text" name="Data" class="form-data" />
+          </div>
+        </div>
+
+        <div class="form-example__container">
+            <div class="form-example__box">
+                <label for="Nota">Nota da Avaliação</label>
+                <input type="text" name="Nota" class="form-nota" />
+            </div>
+            <div class="form-example__box">
+                <label for="Comentario">Comentário</label>
+                <input type="text" name="Comentario" class="form-comentario" />
+            </div>
+        </div>
+
+        <input class="form-button" type="submit" value="Enviar Avaliação" />
+    </form>
+    <script src="./script.js"></script>
+</body>
+
+</html>

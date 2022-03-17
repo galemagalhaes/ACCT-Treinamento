@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  background-color: #000;
+}
+
+.form-example {
+  display: grid;
+  margin-top: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-example__container {
+  margin-bottom: 10px;
+}
+
+.form-example__box label {
+  display: block;
+  color: #fff;
+}
+
+.form-button {
+  background-color: #06d6ff;
+  width: 100%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.form-example__container {
+  width: 350px;
+}
+
+input {
+  width: 100%;
+  border-radius: 5px;
+  height: 30px;
+  border: #fff;
+  margin-top: 2px;
+  padding: 0;
+}
+
+.form-comentario{
+  height: 80px;
+}

@@ -1,0 +1,48 @@
+{{#compare split "!=" true}}
+  <tr>
+    <td class="w-100 ph4 pv2" style="padding: 0px;">
+      <p class="h3" style="font-size: 14px;font-weight: 600;line-height: 19px;color:#000000;margin:0 0 0 25px; padding: 0 0 0 73px ">
+        ((i18n.payment.title))</p>
+      {{#each paymentData.transactions}}
+        <!-- 1 payment -->
+        {{#compare payments.length "==" 1}}
+          {{#each payments}}
+            <div class="pt3 f5 lh-copy" style="padding: 16px 0px 16px 73px ;line-height: 19px;font-size:12px;margin: 0 0 0 25px;"> 
+              ((i18n.payment.paymentSystem))
+              {{paymentSystemName}}
+              {{#if lastDigits}} ((i18n.payment.lastDigits))
+                {{lastDigits}}{{/if}}
+            </div>
+          {{/each}}
+        {{/compare}}
+
+        <!-- N payments -->
+        {{#compare payments.length "!=" 1}}
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            {{#each payments}}
+              <tr>
+                <td class="pv1 bb b--silver">
+                  <strong class="ma0">{{paymentSystemName}}</strong><br />
+                  {{#if lastDigits}}
+                    ((i18n.payment.lastDigits))
+                    {{lastDigits}}
+                  {{/if}}
+                  {{#eq installments 1}}
+                    ((i18n.payment.atSight))
+                  {{else}}
+                    ((i18n.payment.in))
+                    {{installments}}x
+                  {{/eq}}
+                </td>
+                <td
+                  class="pv1 bb b--silver align-right"
+                >((i18n.common.currency))
+                  {{formatCurrency value}}</td>
+              </tr>
+            {{/each}}
+          </table>
+        {{/compare}}
+      {{/each}}
+    </td>
+  </tr>
+{{/compare}}
