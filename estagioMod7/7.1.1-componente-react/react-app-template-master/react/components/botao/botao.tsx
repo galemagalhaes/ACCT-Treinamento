@@ -7,7 +7,7 @@ interface Props {
 
 function Botao({ children, ...props }: Props) {
   return (
-    <button className="styleButton" color={props.cor}>
+    <button className="ph3" color={props.cor}>
       {children}
     </button>
   )

@@ -4485,6 +4485,11 @@
     "slice-ansi" "^2.1.0"
     "string-width" "^3.0.0"
 
+"tachyons@^4.12.0":
+  "integrity" "sha512-2nA2IrYFy3raCM9fxJ2KODRGHVSZNTW3BR0YnlGsLUf1DA3pk3YfWZ/DdfbnZK6zLZS+jUenlUGJsKcA5fUiZg=="
+  "resolved" "https://registry.npmjs.org/tachyons/-/tachyons-4.12.0.tgz"
+  "version" "4.12.0"
+
 "taffydb@2.7.2":
   "integrity" "sha1-e/gQalwaSCUbPjvAoOFzJIn9Dcg="
   "resolved" "https://registry.npmjs.org/taffydb/-/taffydb-2.7.2.tgz"

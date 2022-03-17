@@ -3,6 +3,7 @@
 
 import * as React from 'react'
 
+import 'tachyons'
 import Input from './components/input'
 import Botao from './components/botao'
 
@@ -32,7 +33,7 @@ const RattingsReviews: StorefrontFunctionComponent<RattingsReviewsProps> = ({}) 
         <Input placeholder="Deixe seu comentário (opcional)" />
       </label>
 
-      <Botao cor="red">Enviar avaliação</Botao>
+      <Botao>Enviar avaliação</Botao>
     </div>
   )
 }

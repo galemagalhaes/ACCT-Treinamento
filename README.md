@@ -24,7 +24,7 @@
 ---
 ### Tópicos estudados
 
-- [ ] 2.1 - React - Tópico com exercício
+- [x] 2.1 - React - Tópico com exercício
 - [x] 2.2 - Metodologias ágeis - Scrum
 - [x] 2.3 - NPM e Yarn
 - [x] 2.4 - VTEX Overview
@@ -33,7 +33,7 @@
   * 2.6.1 - APIs VTEX - Tópico com exercício 
 
 ### Exercícios do módulo 2
-- [ ] [Exercício]() - React - desafio prático
+- [x] [Exercício]() - React - desafio prático
 - [x] [Exercício](https://github.com/galemagalhaes/ACCT-Treinamento/blob/main/estagioMod2/2.6.1-APIs-VTEX/exercAPI-VTEX.md) - APIs VTEX - Request no Postman
 
 ---
@@ -65,20 +65,20 @@
 ---
 ### Tópicos estudados
 
-- [ ] 5.1 - Email Framework
+- [x] 5.1 - Email Framework
   * 5.1.1 - Email Framework Training - Tópico com exercício
 
 ### Exercícios do módulo 5
-- [ ] [Exercício]() - Email Framework Training
+- [x] [Exercício]() - Email Framework Training
 
 ---
 > ## **Módulo 6**
 ---
 ### Tópicos estudados
 
-- [ ] 6.1 - Master Data v1
+- [x] 6.1 - Master Data v1
   * 6.1.1 - Master Data v1 - Criando Entidades - Tópico com exercício
-- [ ] 6.2 - Master Data v2 - Tópico com exercício
+- [x] 6.2 - Master Data v2 - Tópico com exercício
 
 ### Exercícios do módulo 6
 - [ ] [Exercício]() - Master Data v1
@@ -89,7 +89,7 @@
 ---
 ### Tópicos estudados
 
-- [ ] 7.1 - Componentes React
+- [x] 7.1 - Componentes React
   * 7.1.1 - Desenvolvendo Componentes React em VTEX IO - Tópico com exercício
 
 ### Exercícios do módulo 7
