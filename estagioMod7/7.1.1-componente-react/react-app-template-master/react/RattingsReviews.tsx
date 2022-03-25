@@ -35,7 +35,18 @@ const RattingsReviews: StorefrontFunctionComponent<RattingsReviewsProps> = ({}) 
     }
 
     console.log(dados)
-    fetch('/api/dataentities/AG/documents')
+    const raw = JSON.stringify(dados)
+    const myHeaders = new Headers()
+
+    myHeaders.append('Content-Type', 'application/json')
+
+    const requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+    }
+
+    fetch('/api/dataentities/AG/documents', requestOptions)
       .then((response) => response.text())
       .then((result) => console.log(result))
       .catch((error) => console.log('error', error))
