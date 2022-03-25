@@ -1,7 +1,7 @@
 {
   "vendor": "acctglobal",
   "name": "rattings-reviews",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "title": "RattingsReviews",
   "description": "Avaliação de produto",
   "builders": {

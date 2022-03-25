@@ -1,9 +1,10 @@
 {
   "store.home": {
     "blocks": [
-      //"helloworld",
-      //"countdown",
-      //"rattings-reviews",
+
+
+
+      "rattings-reviews",
       "responsive-layout.mobile#home",
       "list-context.image-list#demo",
 
