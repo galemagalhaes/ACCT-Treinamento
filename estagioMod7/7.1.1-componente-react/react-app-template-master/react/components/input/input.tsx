@@ -11,11 +11,12 @@ interface Props {
 function Input(props: Props) {
   return (
     <input
-      className="br4 mw-100 ma1 bg-light-gray gray bn f5 pa2"
+      className="br4 mw-100 ma1 bg-light-gray gray bn f5 pa3"
       type={props.type}
       value={props.value}
       placeholder={props.placeholder}
       {...props}
+      required
     />
   )
 }
