@@ -1,20 +1,24 @@
 import * as React from 'react'
 
-interface Props {
+interface PropsInput {
   placeholder?: string
   type?: string
   id?: string
-  value?: any
+  value?: string
   className?: string
+  onchange?: (e: React.ChangeEvent<HTMLInputElement>) => void
 }
 
-function Input(props: Props) {
+function Input(props: PropsInput) {
+  const { value, type, placeholder, onchange } = props
+
   return (
     <input
-      className="br4 mw-100 mb4 bg-light-gray gray bn f5 pa3"
-      type={props.type}
-      value={props.value}
-      placeholder={props.placeholder}
+      className={props.className} // "br2 mb4 bg-white gray ba b--silver f5 pa2"
+      type={type}
+      value={value}
+      placeholder={placeholder}
+      onChange={onchange}
       {...props}
       required
     />
