@@ -56,7 +56,7 @@ const RattingsReviews: StorefrontFunctionComponent<RattingsReviewsProps> = ({}) 
     <form
       onSubmit={handleSubmit}
       id="form"
-      className="flex flex-column w-40 ma5 center ba b--light-gray pa2"
+      className="flex flex-column w-30 ma5 center ba b--light-gray pa2"
     >
       <h1 className="center mt5 mb5 f3 gray">Avaliação de Produto</h1>
       <label htmlFor="data" className="f6 pl2">

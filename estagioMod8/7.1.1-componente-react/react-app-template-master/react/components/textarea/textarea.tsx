@@ -4,21 +4,17 @@ interface Props {
   placeholder?: string
   type?: string
   id?: string
-  value?: any
-  className?: string
 }
 
-function Input(props: Props) {
+function Textarea(props: Props) {
   return (
-    <input
-      className="br4 mw-100 ma1 bg-light-gray gray bn f5 pa3"
+    <textarea
+      className="br2 mw-100 ma1 bg-white ba b--silver f5 h4 pa2"
       type={props.type}
-      value={props.value}
       placeholder={props.placeholder}
       {...props}
-      required
     />
   )
 }
 
-export default Input
+export default Textarea
