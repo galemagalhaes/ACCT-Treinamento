@@ -29,7 +29,7 @@ const StarRattings = (props: PropsStar) => {
             />
 
             <FaStar
-              className="w2 h2 pointer"
+              className="w2 h2 pointer mt4"
               color={
                 ratingValue <= (hover || handleRating) ? '#ef8216' : '#e4e5e9'
               }

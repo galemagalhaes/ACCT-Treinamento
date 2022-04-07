@@ -4,8 +4,11 @@ interface Props {
   placeholder?: string
   type?: string
   id?: string
-  value?: any
+  value?: string
   className?: string
+  pattern?: string
+  title?: string
+  handleOnchange?: (e: any) => void
 }
 
 function Input(props: Props) {
@@ -15,6 +18,9 @@ function Input(props: Props) {
       type={props.type}
       value={props.value}
       placeholder={props.placeholder}
+      pattern={props.pattern}
+      title={props.title}
+      onChange={props.handleOnchange}
       {...props}
       required
     />

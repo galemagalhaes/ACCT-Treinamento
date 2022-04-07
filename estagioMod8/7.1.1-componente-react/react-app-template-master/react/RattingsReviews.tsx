@@ -3,43 +3,38 @@
 /* eslint-disable no-empty-pattern */
 /* eslint-disable @typescript-eslint/no-empty-interface */
 
-import  React, { useEffect, useState } from 'react'
+import  React, { useEffect, useState, FC } from 'react'
+import { Input } from 'vtex.styleguide'
+import { useProduct } from 'vtex.product-context'
 
-import Input from './components/input'
 import Botao from './components/botao'
 import Textarea from './components/textarea'
 import 'tachyons'
 import StarRattings from './components/estrelas'
 
-interface RattingsReviewsProps {}
+interface Idado {
+  Cliente: string | undefined;
+  Produto: string | undefined;
+  Data: string | undefined;
+  Nota: number | undefined;
+  Comentario: string | undefined;
 
-const RattingsReviews: StorefrontFunctionComponent<RattingsReviewsProps> = ({}) => {
+}
+const RattingsReviews: FC = ({}) => {
+  const productContextSku = useProduct()
   const data = new Date()
   const dataFormatada = `${data.getDate()}/${
     data.getMonth() + 1
   }/${data.getFullYear()}`
 
   const [rating, setRating] = useState(0)
-  const [dado, setDado] = useState({Cliente:"", Produto:"", Data: dataFormatada, Nota: 0, Comentario: ""})
+  const [dado, setDado] = useState({Cliente:"", Produto:"", Data: dataFormatada, Nota: 0, Comentario: ""} as Idado)
 
 
   const handleSubmit = (e: any) => {
     e.preventDefault()
 
-    // const produto = document.querySelector('#produto') as HTMLInputElement
-    // const comentario = document.querySelector('#comentario') as HTMLInputElement
-
-    const dados = {
-      Cliente: dado.Cliente,
-      Produto: dado.Produto,
-      Data: dataFormatada,
-      // eslint-disable-next-line radix
-      Nota: rating,
-      Comentario: dado.Comentario,
-    }
-
-    console.log(dados)
-    const raw = JSON.stringify(dados)
+    const raw = JSON.stringify(dado)
     const myHeaders = new Headers()
 
     myHeaders.append('Content-Type', 'application/json')
@@ -52,7 +47,7 @@ const RattingsReviews: StorefrontFunctionComponent<RattingsReviewsProps> = ({}) 
 
     fetch('/api/dataentities/AG/documents', requestOptions)
       .then((response) => response.text())
-      .then((result) => console.log(result))
+      .then((result) => {console.log(result); setDado({...dado, Cliente:"", Comentario:""})})
       .catch((error) => console.log('error', error))
   }
 
@@ -60,9 +55,14 @@ const RattingsReviews: StorefrontFunctionComponent<RattingsReviewsProps> = ({}) 
     setDado({...dado, Nota: rating})
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[rating])
-  console.log(dado)
+
+useEffect(()=>{
+  setDado({...dado, Produto: productContextSku?.product?.productId})
+ // eslint-disable-next-line react-hooks/exhaustive-deps
+},[])
 
   return (
+
     <form
       onSubmit={handleSubmit}
       id="form"
@@ -73,38 +73,39 @@ const RattingsReviews: StorefrontFunctionComponent<RattingsReviewsProps> = ({}) 
       </div>
 
       <div className="flex">
-
-        <div className="w-50">
-          <label htmlFor="data" className="f6 pl2">
-            Hoje é:
-          </label>
+        <div className="w-50 mr1 mb3">
           <Input
             id="data"
+            label="Data da avaliação"
+            size= "small"
             value={dataFormatada}
-            className="br2 mb4 bg-white gray ba b--silver f5 pa2"/>
+          />
         </div>
-
-        <div className="w-50 dib ">
-          <label htmlFor="produto" className="f6 pl2">
-            Produto avaliado:
-          </label>
+        <div className="w-50 ml1 mb3 ">
           <Input
+            className="bg-base"
             id="produto"
-            placeholder="SKU do produto"
-            className="br2 mb4 bg-white gray ba b--silver f5 pa2"/>
+            label="Produto avaliado"
+            size= "small"
+            value={productContextSku?.product?.productId}
+          />
         </div>
-
       </div>
 
       <div className="mw-100 flex flex-column">
-        <label htmlFor="user" className="f6 pl2 w-100">
-          Usuário avaliador:
-        </label>
+
         <Input
           id="user"
-          className="br2 mb4 bg-white gray ba b--silver f5 pa2"
+          size="small"
+          className="br2 bn mb4 pa2"
           placeholder="Digite aqui o nome do usuário"
-          onchange={e => setDado({...dado, Cliente: e.target.value})}/>
+          label="Nome do usuário"
+          value={dado.Cliente}
+          // pattern="/[A-z]+\s/"
+          // errorMessage="Invalid field value"
+          required
+          onChange={(e: any) => setDado({...dado, Cliente: e.target.value})}
+          />
 
           <StarRattings handleRating={rating} handleSetRating={(e:number)=>{setRating(e)}} />
 
@@ -112,7 +113,11 @@ const RattingsReviews: StorefrontFunctionComponent<RattingsReviewsProps> = ({}) 
       <label htmlFor="comentario" className="f6 pl2">
         Comentário sobre o produto:
       </label>
-      <Textarea id="comentario" placeholder="Deixe aqui o seu comentário (opcional)" />
+      <Textarea
+      id="comentario"
+      placeholder="Deixe aqui o seu comentário (opcional)"
+      value={dado.Comentario}
+      handleOnchange={(e: any) => setDado({...dado, Comentario: e.target.value})}/>
 
       </div>
 
@@ -125,10 +130,10 @@ const RattingsReviews: StorefrontFunctionComponent<RattingsReviewsProps> = ({}) 
   )
 }
 
-RattingsReviews.schema = {
-  title: 'editor.rattings-reviews.title',
-  description: 'editor.rattings-reviews.description',
-  type: 'object',
-  properties: {},
-}
+// RattingsReviews.schema = {
+//   title: 'editor.rattings-reviews.title',
+//   description: 'editor.rattings-reviews.description',
+//   type: 'object',
+//   properties: {},
+// }
 export default RattingsReviews

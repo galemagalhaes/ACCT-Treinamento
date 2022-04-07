@@ -2,10 +2,19 @@
   "extends": "@vtex/tsconfig",
   "compilerOptions": {
     "noEmitOnError": false,
-    "lib": ["dom"],
+    "lib": [
+      "dom"
+    ],
     "module": "esnext",
     "moduleResolution": "node",
     "target": "es2017"
   },
-  "include": ["./typings/*.d.ts", "./**/*.tsx", "./**/*.ts", "masterdata.js", "components/estrelas/index.js", "components/estrelas/stars.jsx"]
+  "include": [
+    "./typings/*.d.ts",
+    "./**/*.tsx",
+    "./**/*.ts",
+    "masterdata.js",
+    "components/estrelas/index.js",
+    "components/estrelas/stars.jsx"
+  ]
 }
