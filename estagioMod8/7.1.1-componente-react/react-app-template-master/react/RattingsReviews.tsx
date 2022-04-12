@@ -4,19 +4,18 @@
 /* eslint-disable @typescript-eslint/no-empty-interface */
 
 import  React, { useEffect, useState, FC } from 'react'
-import { Input } from 'vtex.styleguide'
+import { Input, Alert, Textarea } from 'vtex.styleguide'
 import { useProduct } from 'vtex.product-context'
 
 import Botao from './components/botao'
-import Textarea from './components/textarea'
 import 'tachyons'
 import StarRattings from './components/estrelas'
 
 interface Idado {
-  Cliente: string | undefined;
+  Cliente: string;
   Produto: string | undefined;
   Data: string | undefined;
-  Nota: number | undefined;
+  Nota: number ;
   Comentario: string | undefined;
 
 }
@@ -29,12 +28,18 @@ const RattingsReviews: FC = ({}) => {
 
   const [rating, setRating] = useState(0)
   const [dado, setDado] = useState({Cliente:"", Produto:"", Data: dataFormatada, Nota: 0, Comentario: ""} as Idado)
-
+  const [showPopUp, setShowPopUp] = useState(false)
+  const [mensagem, setMensagem] = useState({tipo:"", mensagem:""})
+  const [mensagemErroValidacaoCliente, setMensagemErroValidacaoCliente] = useState("")
+  const [mensagemErroValidacaoNota, setMensagemErroValidacaoNota] = useState("")
 
   const handleSubmit = (e: any) => {
     e.preventDefault()
 
-    const raw = JSON.stringify(dado)
+    if(validarCliente() && validarNota()){
+      setMensagemErroValidacaoCliente("")
+      setMensagemErroValidacaoNota("")
+      const raw = JSON.stringify(dado)
     const myHeaders = new Headers()
 
     myHeaders.append('Content-Type', 'application/json')
@@ -47,8 +52,60 @@ const RattingsReviews: FC = ({}) => {
 
     fetch('/api/dataentities/AG/documents', requestOptions)
       .then((response) => response.text())
-      .then((result) => {console.log(result); setDado({...dado, Cliente:"", Comentario:""})})
-      .catch((error) => console.log('error', error))
+      .then((result) => {console.log(result); enviado()})
+      .catch((error) => { console.log("error", error); naoEnviado()})
+    } else {
+
+      if(validarCliente()){
+        setMensagemErroValidacaoCliente("")
+      }else{
+        setMensagemErroValidacaoCliente("Este campo aceita apenas letras e espaços")
+      }
+
+      if(validarNota()){
+        setMensagemErroValidacaoNota("")
+      }else{
+        setMensagemErroValidacaoNota("É obrigatório preencher uma nota")
+      }
+    }
+  }
+
+  function enviado(){
+    setDado({...dado, Cliente:"", Comentario:""})
+    setRating(0)
+    setMensagem({tipo:"success", mensagem:"Seus dados foram enviados com sucesso."})
+    modalStatusEnvio()
+  }
+
+  function naoEnviado(){
+    setMensagem({tipo:"error", mensagem:"Não foi possível enviar os dados, tente de novo."})
+    modalStatusEnvio()
+  }
+
+  function modalStatusEnvio(){
+    setShowPopUp(!showPopUp)
+  }
+
+
+
+  function validarCliente(){
+    const re = /^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/;
+
+  if (!re.test(dado.Cliente)){
+    return false
+  }
+
+  return true
+  }
+
+  function validarNota(){
+    const re = /^[1-5]+$/;
+
+  if (!re.test((dado.Nota).toString())){
+    return false
+  }
+
+  return true
   }
 
   useEffect(()=>{
@@ -56,18 +113,20 @@ const RattingsReviews: FC = ({}) => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[rating])
 
-useEffect(()=>{
-  setDado({...dado, Produto: productContextSku?.product?.productId})
- // eslint-disable-next-line react-hooks/exhaustive-deps
-},[])
+
+  useEffect(()=>{
+    setDado({...dado, Produto: productContextSku?.product?.productId})
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[])
 
   return (
-
+    <>
     <form
       onSubmit={handleSubmit}
       id="form"
       className="w-30 ma5 center ba b--silver pa2"
-    >
+      >
+
       <div className="mw-100 flex flex-column">
         <h1 className="center mt5 mb5 f3 gray">Avaliação de Produto</h1>
       </div>
@@ -78,62 +137,61 @@ useEffect(()=>{
             id="data"
             label="Data da avaliação"
             size= "small"
+            disabled
             value={dataFormatada}
           />
         </div>
+
         <div className="w-50 ml1 mb3 ">
           <Input
             className="bg-base"
             id="produto"
             label="Produto avaliado"
             size= "small"
+            disabled
             value={productContextSku?.product?.productId}
           />
         </div>
       </div>
 
       <div className="mw-100 flex flex-column">
-
-        <Input
-          id="user"
-          size="small"
-          className="br2 bn mb4 pa2"
-          placeholder="Digite aqui o nome do usuário"
-          label="Nome do usuário"
-          value={dado.Cliente}
-          // pattern="/[A-z]+\s/"
-          // errorMessage="Invalid field value"
-          required
-          onChange={(e: any) => setDado({...dado, Cliente: e.target.value})}
+          <Input
+            id="user"
+            size="small"
+            className="br2 bn mb4 pa2"
+            placeholder="Digite aqui o nome do usuário"
+            label="Nome do usuário"
+            value={dado.Cliente}
+            errorMessage={mensagemErroValidacaoCliente}
+            required
+            onChange={(e: any) => setDado({...dado, Cliente: e.target.value})}
           />
 
-          <StarRattings handleRating={rating} handleSetRating={(e:number)=>{setRating(e)}} />
+          <StarRattings
+            handleRating={rating}
+            handleSetRating={(e:number)=>{setRating(e)}}
+            errorMessage={mensagemErroValidacaoNota} />
 
 
-      <label htmlFor="comentario" className="f6 pl2">
-        Comentário sobre o produto:
-      </label>
-      <Textarea
-      id="comentario"
-      placeholder="Deixe aqui o seu comentário (opcional)"
-      value={dado.Comentario}
-      handleOnchange={(e: any) => setDado({...dado, Comentario: e.target.value})}/>
-
+          <Textarea
+            label="Comentário:"
+            placeholder="Deixe aqui o seu comentário (opcional)"
+            onChange={(e: any) => setDado({...dado, Comentario: e.target.value})}
+            />
       </div>
 
       <div className="flex">
-      <Botao type="submit" id="botao">
-        Enviar avaliação
-      </Botao>
+        <Botao type="submit" id="botao">
+          Enviar avaliação
+        </Botao>
       </div>
     </form>
+
+    {showPopUp ? <Alert type={mensagem.tipo} onClose={() => modalStatusEnvio()} autoClose="4000">
+    {mensagem.mensagem}
+    </Alert> : null }
+    </>
   )
 }
 
-// RattingsReviews.schema = {
-//   title: 'editor.rattings-reviews.title',
-//   description: 'editor.rattings-reviews.description',
-//   type: 'object',
-//   properties: {},
-// }
 export default RattingsReviews
