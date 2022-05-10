@@ -1,5 +1,5 @@
 {
-  "vendor": "mizuta",
+  "vendor": "acctglobal",
   "name": "rattings-reviews",
   "version": "0.1.0",
   "title": "RattingsReviews",
@@ -12,9 +12,12 @@
   },
   "dependencies": {
     "vtex.styleguide": "9.x",
-    "vtex.css-handles": "0.x"
+    "vtex.product-context": "0.x",
+    "vtex.store-graphql": "2.x"
   },
-  "registries": ["smartcheckout"],
+  "registries": [
+    "smartcheckout"
+  ],
   "policies": [],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

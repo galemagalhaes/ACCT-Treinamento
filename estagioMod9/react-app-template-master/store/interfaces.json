@@ -1,0 +1,6 @@
+{
+  "rattings-reviews": {
+    "component": "RattingsReviews",
+    "render": "client"
+  }
+}

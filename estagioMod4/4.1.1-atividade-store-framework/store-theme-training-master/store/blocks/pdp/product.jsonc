@@ -1,7 +1,7 @@
 {
   "store.product": {
     "children": [
-      "rattings-reviews",
+      //"rattings-reviews",
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
       "flex-layout.row#description",

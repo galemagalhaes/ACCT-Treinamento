@@ -2,9 +2,8 @@
   "store.home": {
     "blocks": [
 
-
-
       "rattings-reviews",
+
       "responsive-layout.mobile#home",
       "list-context.image-list#demo",
 

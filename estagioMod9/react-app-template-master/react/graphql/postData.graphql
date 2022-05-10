@@ -1,0 +1,15 @@
+mutation POST_DATA(
+  $acronym: String!
+  $account: String
+  $schema: String
+  $document: DocumentInputV1
+) {
+  createDocument(
+    acronym: $acronym
+    account: $account
+    schema: $schema
+    document: $document
+  ) {
+    documentId
+  }
+}

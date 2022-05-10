@@ -1,8 +1,8 @@
 {
-  "vendor": "mizuta",
-  "name": "rattings-reviews",
+  "vendor": "acctglobal",
+  "name": "ratings-mod11",
   "version": "0.1.0",
-  "title": "RattingsReviews",
+  "title": "RatingsMod11",
   "description": "Avaliação de produto",
   "builders": {
     "react": "3.x",
@@ -12,9 +12,12 @@
   },
   "dependencies": {
     "vtex.styleguide": "9.x",
-    "vtex.css-handles": "0.x"
+    "vtex.css-handles": "0.x",
+    "vtex.product-context": "0.x"
   },
-  "registries": ["smartcheckout"],
+  "registries": [
+    "smartcheckout"
+  ],
   "policies": [],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
