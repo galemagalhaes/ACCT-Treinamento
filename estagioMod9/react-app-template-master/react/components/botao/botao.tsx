@@ -4,7 +4,7 @@ interface Props {
   children: string
   type?: 'button' | 'submit' | 'reset' | undefined
   id: string
-  onClick: any
+  onClick?: any
 }
 
 function Botao({ children, ...props }: Props) {

@@ -1,8 +1,8 @@
 mutation POST_DATA(
   $acronym: String!
-  $account: String
+  $account: String!
   $schema: String
-  $document: DocumentInputV1
+  $document: DocumentInput
 ) {
   createDocument(
     acronym: $acronym
