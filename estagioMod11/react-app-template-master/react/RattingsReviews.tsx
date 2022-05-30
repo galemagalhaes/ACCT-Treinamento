@@ -4,21 +4,14 @@
 /* eslint-disable @typescript-eslint/no-empty-interface */
 
 import  React, { useEffect, useState, FC } from 'react'
-import { Input, Alert, Textarea } from 'vtex.styleguide'
+import { Alert } from 'vtex.styleguide'
 import { useProduct } from 'vtex.product-context'
 
-import Botao from './components/botao'
 import 'tachyons'
-import StarRattings from './components/estrelas'
+import Form from './components/form'
+import { validarCliente, validarNota } from './components/validacoes/validacao'
+import { Idado } from './interfaces'
 
-interface Idado {
-  Cliente: string;
-  Produto: string | undefined;
-  Data: string | undefined;
-  Nota: number ;
-  Comentario: string | undefined;
-
-}
 const RattingsReviews: FC = ({}) => {
   const productContextSku = useProduct()
   const data = new Date()
@@ -27,7 +20,13 @@ const RattingsReviews: FC = ({}) => {
   }/${data.getFullYear()}`
 
   const [rating, setRating] = useState(0)
-  const [dado, setDado] = useState({Cliente:"", Produto:"", Data: dataFormatada, Nota: 0, Comentario: ""} as Idado)
+  const [dado, setDado] = useState({
+    Cliente:"",
+    Produto: productContextSku?.product?.productId,
+    Data: dataFormatada,
+    Nota: 0,
+    Comentario: ""} as Idado)
+
   const [showPopUp, setShowPopUp] = useState(false)
   const [mensagem, setMensagem] = useState({tipo:"", mensagem:""})
   const [mensagemErroValidacaoCliente, setMensagemErroValidacaoCliente] = useState("")
@@ -36,7 +35,7 @@ const RattingsReviews: FC = ({}) => {
   const handleSubmit = (e: any) => {
     e.preventDefault()
 
-    if(validarCliente() && validarNota()){
+    if(validarCliente(dado.Cliente) && validarNota(dado.Nota)){
       setMensagemErroValidacaoCliente("")
       setMensagemErroValidacaoNota("")
       const raw = JSON.stringify(dado)
@@ -56,13 +55,13 @@ const RattingsReviews: FC = ({}) => {
       .catch((error) => { console.log("error", error); naoEnviado()})
     } else {
 
-      if(validarCliente()){
+      if(validarCliente(dado.Cliente)){
         setMensagemErroValidacaoCliente("")
       }else{
         setMensagemErroValidacaoCliente("Este campo aceita apenas letras e espaços")
       }
 
-      if(validarNota()){
+      if(validarNota(dado.Nota)){
         setMensagemErroValidacaoNota("")
       }else{
         setMensagemErroValidacaoNota("É obrigatório preencher uma nota")
@@ -86,32 +85,18 @@ const RattingsReviews: FC = ({}) => {
     setShowPopUp(!showPopUp)
   }
 
-
-
-  function validarCliente(){
-    const re = /^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/;
-
-  if (!re.test(dado.Cliente)){
-    return false
-  }
-
-  return true
-  }
-
-  function validarNota(){
-    const re = /^[1-5]+$/;
-
-  if (!re.test((dado.Nota).toString())){
-    return false
-  }
-
-  return true
-  }
-
   useEffect(()=>{
     setDado({...dado, Nota: rating})
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[rating])
+
+  // useEffect(()=>{
+  //   if(validarCliente(dado.Cliente)){
+  //     setMensagemErroValidacaoCliente("")
+  //   }else{
+  //     setMensagemErroValidacaoCliente("Este campo aceita apenas letras e espaços")
+  //   }
+  // },[dado.Cliente])
 
 
   useEffect(()=>{
@@ -120,77 +105,23 @@ const RattingsReviews: FC = ({}) => {
   },[])
 
   return (
-    <>
-    <form
-      onSubmit={handleSubmit}
-      id="form"
-      className="w-30 ma5 center ba b--silver pa2"
-      >
+    <div className="w-30 ma5 center ba b--silver pa2">
 
-      <div className="mw-100 flex flex-column">
-        <h1 className="center mt5 mb5 f3 gray">Avaliação de Produto</h1>
-      </div>
-
-      <div className="flex">
-        <div className="w-50 mr1 mb3">
-          <Input
-            id="data"
-            label="Data da avaliação"
-            size= "small"
-            disabled
-            value={dataFormatada}
-          />
-        </div>
-
-        <div className="w-50 ml1 mb3 ">
-          <Input
-            className="bg-base"
-            id="produto"
-            label="Produto avaliado"
-            size= "small"
-            disabled
-            value={productContextSku?.product?.productId}
-          />
-        </div>
-      </div>
-
-      <div className="mw-100 flex flex-column">
-          <Input
-            id="user"
-            size="small"
-            className="br2 bn mb4 pa2"
-            placeholder="Digite aqui o nome do usuário"
-            label="Nome do usuário"
-            value={dado.Cliente}
-            errorMessage={mensagemErroValidacaoCliente}
-            required
-            onChange={(e: any) => setDado({...dado, Cliente: e.target.value})}
-          />
-
-          <StarRattings
-            handleRating={rating}
-            handleSetRating={(e:number)=>{setRating(e)}}
-            errorMessage={mensagemErroValidacaoNota} />
-
-
-          <Textarea
-            label="Comentário:"
-            placeholder="Deixe aqui o seu comentário (opcional)"
-            onChange={(e: any) => setDado({...dado, Comentario: e.target.value})}
-            />
-      </div>
-
-      <div className="flex">
-        <Botao type="submit" id="botao">
-          Enviar avaliação
-        </Botao>
-      </div>
-    </form>
+    <Form
+    handleDado = {dado}
+    handleSetDado = {setDado}
+    handleRating = {rating}
+    handleSetRating = {setRating}
+    handleOnClick = {handleSubmit}
+    handleMensagemErroValidacaoCliente = {mensagemErroValidacaoCliente}
+    handleMensagemErroValidacaoNota = {mensagemErroValidacaoNota}
+    />
 
     {showPopUp ? <Alert type={mensagem.tipo} onClose={() => modalStatusEnvio()} autoClose="4000">
     {mensagem.mensagem}
     </Alert> : null }
-    </>
+
+    </div>
   )
 }
 

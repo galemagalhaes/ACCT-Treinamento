@@ -2,13 +2,13 @@ import React, { useState } from 'react'
 import { FaStar } from 'react-icons/fa'
 
 interface PropsStar {
-  handleRating: number
+  handleStar: number
   errorMessage?: string
-  handleSetRating: (e: number) => void
+  handleSetStar: (e: number) => void
 }
 
 const StarRattings = (props: PropsStar) => {
-  const { handleRating, handleSetRating, errorMessage } = props
+  const { handleStar, handleSetStar, errorMessage } = props
   const contador = [1, 2, 3, 4, 5]
   const [hover, setHover] = useState(0)
 
@@ -25,14 +25,14 @@ const StarRattings = (props: PropsStar) => {
               className="dn "
               value={ratingValue}
               onClick={() => {
-                handleSetRating(ratingValue)
+                handleSetStar(ratingValue)
               }}
             />
 
             <FaStar
               className="w2 h2 pointer mt4"
               color={
-                ratingValue <= (hover || handleRating) ? '#ef8216' : '#e4e5e9'
+                ratingValue <= (hover || handleStar) ? '#ef8216' : '#e4e5e9'
               }
               onMouseEnter={() => setHover(ratingValue)}
               onMouseLeave={() => setHover(0)}
@@ -40,7 +40,7 @@ const StarRattings = (props: PropsStar) => {
           </label>
         )
       })}
-      <p className="f6 pl7 ma0">Sua nota é {handleRating}</p>
+      <p className="f6 pl7 ma0">Sua nota é {handleStar}</p>
       <span>{errorMessage}</span>
     </div>
   )

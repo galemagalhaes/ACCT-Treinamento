@@ -1,14 +1,11 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable no-console */
 /* eslint-disable no-empty-pattern */
-/* eslint-disable @typescript-eslint/no-empty-interface */
 import type { FC } from 'react'
 import React, { useEffect, useState } from 'react'
 import { Input, Alert, Textarea } from 'vtex.styleguide'
 import { useProduct } from 'vtex.product-context'
 import { useMutation } from 'react-apollo'
 
-import POST_DATA from './graphql/postData.graphql'
+import DocumentResponse from './graphql/postData.graphql'
 import Botao from './components/botao'
 import 'tachyons'
 import StarRattings from './components/estrelas'
@@ -22,8 +19,9 @@ interface Idado {
 }
 
 const RattingsReviews: FC = ({}) => {
-  const [postRating] = useMutation(POST_DATA)
+  const [postRating] = useMutation(DocumentResponse)
   const productContextSku = useProduct()
+
   const data = new Date()
   const dataFormatada = `${data.getDate()}/${
     data.getMonth() + 1
@@ -37,10 +35,12 @@ const RattingsReviews: FC = ({}) => {
     Nota: 0,
     Comentario: '',
   } as Idado)
+
   const [showPopUp, setShowPopUp] = useState(false)
   const [mensagem, setMensagem] = useState({ tipo: '', mensagem: '' })
   const [mensagemErroValidacaoCliente, setMensagemErroValidacaoCliente] =
     useState('')
+
   const [mensagemErroValidacaoNota, setMensagemErroValidacaoNota] = useState('')
 
   const handleSubmit = (e: any) => {
@@ -49,6 +49,8 @@ const RattingsReviews: FC = ({}) => {
     if (validarCliente() && validarNota()) {
       setMensagemErroValidacaoCliente('')
       setMensagemErroValidacaoNota('')
+
+      sendRating()
 
       enviado()
     } else {
@@ -75,16 +77,33 @@ const RattingsReviews: FC = ({}) => {
         acronym: 'AG',
         schema: 'formulario',
         document: {
-          document: {
-            Cliente: dado.Cliente,
-            Produto: dado.Produto,
-            Data: dado.Data,
-            Nota: dado.Nota,
-            Comentario: dado.Comentario,
-          },
+          ' fields': [
+            {
+              key: 'Cliente',
+              value: dado.Cliente,
+            },
+            {
+              key: 'Produto',
+              value: dado.Produto,
+            },
+            {
+              key: 'Data',
+              value: dado.Data,
+            },
+            {
+              key: 'Nota',
+              value: dado.Nota.toString(),
+            },
+            {
+              key: 'Comentario',
+              value: dado.Comentario,
+            },
+          ],
         },
       },
     })
+    // eslint-disable-next-line no-console
+    // console.log(dataF)
   }
 
   function enviado() {
@@ -133,11 +152,7 @@ const RattingsReviews: FC = ({}) => {
 
   return (
     <>
-      <form
-        onSubmit={handleSubmit}
-        id="form"
-        className="w-30 ma5 center ba b--silver pa2"
-      >
+      <form id="form" className="w-30 ma5 center ba b--silver pa2">
         <div className="mw-100 flex flex-column">
           <h1 className="center mt5 mb5 f3 gray">Avaliação de Produto</h1>
         </div>
@@ -196,7 +211,7 @@ const RattingsReviews: FC = ({}) => {
         </div>
 
         <div className="flex">
-          <Botao onClick={sendRating()} type="submit" id="botao">
+          <Botao onClick={handleSubmit} type="submit" id="botao">
             Enviar avaliação
           </Botao>
         </div>
@@ -215,4 +230,10 @@ const RattingsReviews: FC = ({}) => {
   )
 }
 
+// RattingsReviews.schema = {
+//   title: 'editor.rattings-reviews.title',
+//   description: 'editor.rattings-reviews.description',
+//   type: 'object',
+//   properties: {},
+// }
 export default RattingsReviews

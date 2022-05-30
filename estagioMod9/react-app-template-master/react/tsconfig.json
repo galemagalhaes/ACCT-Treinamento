@@ -16,5 +16,5 @@
     "RattingsReviews.tsx",
     "components/estrelas/index.js",
     "components/estrelas/stars.jsx"
-  ]
+, "context/RattingReviewsProvider.jsx"  ]
 }

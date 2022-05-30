@@ -1,13 +1,11 @@
-mutation POST_DATA(
-  $acronym: String!
-  $account: String!
-  $schema: String
+mutation DocumentResponse(
+  $account: String!,
+  $acronym: String!,
   $document: DocumentInput
 ) {
   createDocument(
-    acronym: $acronym
-    account: $account
-    schema: $schema
+    account: $account,
+    acronym: $acronym,
     document: $document
   ) {
     documentId

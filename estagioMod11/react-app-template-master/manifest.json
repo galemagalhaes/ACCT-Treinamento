@@ -1,8 +1,8 @@
 {
   "vendor": "acctglobal",
-  "name": "ratings-mod11",
+  "name": "rattings-reviews",
   "version": "0.1.0",
-  "title": "RatingsMod11",
+  "title": "RattingsReviews",
   "description": "Avaliação de produto",
   "builders": {
     "react": "3.x",
