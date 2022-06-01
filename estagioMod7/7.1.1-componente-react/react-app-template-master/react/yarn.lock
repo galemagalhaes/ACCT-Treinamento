@@ -51,9 +51,9 @@
     "@apollo/react-hooks" "^3.1.5"
     tslib "^1.10.0"
 
-"@apollo/react-testing@^3.1.3":
+"@apollo/react-testing@3":
   version "3.1.4"
-  resolved "https://registry.npmjs.org/@apollo/react-testing/-/react-testing-3.1.4.tgz"
+  resolved "https://registry.yarnpkg.com/@apollo/react-testing/-/react-testing-3.1.4.tgz#f2e1b9b65a0bd773facf54db4fdb5995d162a72a"
   integrity sha512-1eKjN36UfIAnBVmfLbl12vQ/eCjTqYdaU95chGIQzT2uHd5BnasJu0z+MwXBrEs57A9WY9mFvLZxdjzQJXaacA==
   dependencies:
     "@apollo/react-common" "^3.1.4"
@@ -1360,13 +1360,6 @@
   dependencies:
     "@types/node" "*"
 
-"@types/graphql@^14.5.0":
-  version "14.5.0"
-  resolved "https://registry.npmjs.org/@types/graphql/-/graphql-14.5.0.tgz"
-  integrity sha512-MOkzsEp1Jk5bXuAsHsUi6BVv0zCO+7/2PTiZMXWDSsMXvNU6w/PLMQT2vHn8hy2i0JqojPz1Sz6rsFjHtsU0lA==
-  dependencies:
-    graphql "*"
-
 "@types/hoist-non-react-statics@^3.3.1":
   version "3.3.1"
   resolved "https://registry.npmjs.org/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz"
@@ -1499,10 +1492,10 @@
   resolved "https://registry.npmjs.org/@types/zen-observable/-/zen-observable-0.8.1.tgz"
   integrity sha512-wmk0xQI6Yy7Fs/il4EpOcflG4uonUpYGqvZARESLc2oy4u69fkatFLbJOeW4Q6awO15P4rduAe6xkwHevpXcUQ==
 
-"@vtex/test-tools@^3.3.2":
-  version "3.3.2"
-  resolved "https://registry.npmjs.org/@vtex/test-tools/-/test-tools-3.3.2.tgz"
-  integrity sha512-rs0yHIpSlJc5zM6nYSFxWRMyS7k1w4JYyWmD5flNOtMIHiuUkOFrQh84tBAPtz6nxFf9993fv/Zfip5KKdpVmA==
+"@vtex/test-tools@^3.4.3":
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/@vtex/test-tools/-/test-tools-3.4.3.tgz#d0cc34c445410050b9b56f804236c7c07a242489"
+  integrity sha512-sBGnr9lIv2dFiZnkUWBdiuiE/GRcu7jSKYqcYQ7fD1o0VlacMIMxHQmz8Gv1NIic37QRgntbSBDrvUUNo94Iwg==
   dependencies:
     "@babel/core" "^7.11.1"
     "@babel/plugin-proposal-class-properties" "^7.10.4"
@@ -1513,7 +1506,6 @@
     "@testing-library/jest-dom" "^5.11.2"
     "@testing-library/react" "^10.4.7"
     "@testing-library/react-hooks" "^3.4.1"
-    "@types/graphql" "^14.5.0"
     "@types/jest" "^26.0.8"
     "@types/node" "^14.0.27"
     "@types/react" "^16.9.44"
@@ -1556,10 +1548,6 @@ abab@^2.0.0:
   version "2.0.5"
   resolved "https://registry.npmjs.org/abab/-/abab-2.0.5.tgz"
   integrity sha512-9IK9EadsbHo6jLWIpxpR6pL0sazTXV6+SQv25ZB+F7Bj9mJNaOc4nCRabwd5M/JwmUa8idz6Eci6eKfJryPs6Q==
-
-"acctglobal.rattings-reviews@https://galemagalhaes--acctglobal.myvtex.com/_v/private/typings/linked/v1/acctglobal.rattings-reviews@0.1.0+build1649361065/public/@types/acctglobal.rattings-reviews":
-  version "0.1.0"
-  resolved "https://galemagalhaes--acctglobal.myvtex.com/_v/private/typings/linked/v1/acctglobal.rattings-reviews@0.1.0+build1649361065/public/@types/acctglobal.rattings-reviews#ff72536948bc2e60032cfc3cff433ac56832dfda"
 
 acorn-globals@^4.3.2:
   version "4.3.4"
@@ -2632,7 +2620,7 @@ graphql-tag@^2.11.0:
   resolved "https://registry.npmjs.org/graphql-tag/-/graphql-tag-2.11.0.tgz"
   integrity sha512-VmsD5pJqWJnQZMUeRwrDhfgoyqcfwEkvtpANqcoUG8/tOLkwNgU9mzub/Mc78OJMhHjx7gfAMTxzdG43VGg3bA==
 
-graphql@*, graphql@^14.0.0, graphql@^14.6.0:
+graphql@^14.0.0, graphql@^14.6.0:
   version "14.7.0"
   resolved "https://registry.npmjs.org/graphql/-/graphql-14.7.0.tgz"
   integrity sha512-l0xWZpoPKpppFzMfvVyFmp9vLN7w/ZZJPefUicMCepfJeQ8sMcztloGYY9DfjVPo6tIUDzU5Hw3MUbIjj9AVVA==
@@ -4092,9 +4080,9 @@ react-icons@^4.3.1:
   resolved "https://registry.npmjs.org/react-icons/-/react-icons-4.3.1.tgz"
   integrity sha512-cB10MXLTs3gVuXimblAdI71jrJx8njrJZmNMEMC+sQu5B/BIOmlsAjskdqpn81y8UBVEGuHODd7/ci5DvoSzTQ==
 
-react-intl@^3.12.0:
+react-intl@3:
   version "3.12.1"
-  resolved "https://registry.npmjs.org/react-intl/-/react-intl-3.12.1.tgz"
+  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-3.12.1.tgz#e9a783ea20302e9da25e4eda59e5593a43d2ec80"
   integrity sha512-cgumW29mwROIqyp8NXStYsoIm27+8FqnxykiLSawWjOxGIBeLuN/+p2srei5SRIumcJefOkOIHP+NDck05RgHg==
   dependencies:
     "@formatjs/intl-displaynames" "^1.2.0"
@@ -4947,15 +4935,18 @@ verror@1.10.0:
 
 "vtex.css-handles@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.4/public/@types/vtex.css-handles":
   version "0.4.4"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.4/public/@types/vtex.css-handles#8c45c6decf9acd2b944e07261686decff93d6422"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.4/public/@types/vtex.css-handles"
+  integrity sha512-QHSMD4rq2nKtJ1f1tH/RPqj4cYu2gKdghYHBdJSYzGh0e7AGD8ByCPzSdHyVnlO2OIRKAAqPHI05baN6neLYFg==
 
 "vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.4/public/@types/vtex.render-runtime":
   version "8.132.4"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.4/public/@types/vtex.render-runtime#66bb41bd4d342e37c9d85172aad5f7eefebfb6dc"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.4/public/@types/vtex.render-runtime"
+  integrity sha512-qYiGKi/h+KtqcH8ijJDdx6ba5sYeP/+QBk8uJcNci/Sc9+wVoBdrm9wXvUPaqPg24FbysfyuoFTogJ+9Q1OLgQ==
 
 "vtex.styleguide@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.1/public/@types/vtex.styleguide":
   version "9.146.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.1/public/@types/vtex.styleguide#66db40ca1b78ad77ce4beedabecee320e1ef2ead"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.1/public/@types/vtex.styleguide"
+  integrity sha512-Ttow5TAkTgeH55+m+FafXbmFPO4PtVqWZmxSwKLBDisi7pQtUbnR1Rgvs334Gi5g3Y/jZZa7LtJ4UiGTBMLWzw==
 
 w3c-hr-time@^1.0.1:
   version "1.0.2"

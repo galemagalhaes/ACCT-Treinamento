@@ -2,9 +2,7 @@
   "extends": "@vtex/tsconfig",
   "compilerOptions": {
     "noEmitOnError": false,
-    "lib": [
-      "dom"
-    ],
+    "lib": ["dom"],
     "module": "esnext",
     "moduleResolution": "node",
     "target": "es2017"
@@ -15,6 +13,7 @@
     "./**/*.ts",
     "RattingsReviews.tsx",
     "components/estrelas/index.js",
-    "components/estrelas/stars.jsx"
-, "context/RattingReviewsProvider.jsx"  ]
+    "components/estrelas/stars.jsx",
+    "context/RattingReviewsProvider.jsx"
+  ]
 }

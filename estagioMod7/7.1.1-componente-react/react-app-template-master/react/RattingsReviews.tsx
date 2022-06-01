@@ -8,7 +8,7 @@ import React from 'react'
 import Input from './components/input'
 import Botao from './components/botao'
 import Textarea from './components/textarea'
-import 'tachyons'
+// import 'tachyons'
 
 interface RattingsReviewsProps {}
 
@@ -30,8 +30,7 @@ const RattingsReviews: StorefrontFunctionComponent<RattingsReviewsProps> = ({}) 
       Cliente: cliente.value,
       Produto: produto.value,
       Data: dataFormatada,
-      // eslint-disable-next-line radix
-      Nota: parseInt(nota.value),
+      Nota:nota.value,
       Comentario: comentario.value,
     }
 
@@ -74,6 +73,7 @@ const RattingsReviews: StorefrontFunctionComponent<RattingsReviewsProps> = ({}) 
   return (
     <>
       <form
+        data-testId="formulario"
         onSubmit={handleSubmit}
         id="form"
         className="flex flex-column w-30 ma5 center ba b--light-gray pa2"
@@ -123,7 +123,7 @@ const RattingsReviews: StorefrontFunctionComponent<RattingsReviewsProps> = ({}) 
           placeholder="Deixe aqui o seu comentário (opcional)"
         />
 
-        <Botao type="submit" id="botao">
+        <Botao type="submit" id="enviar">
           Enviar avaliação
         </Botao>
       </form>
@@ -131,10 +131,10 @@ const RattingsReviews: StorefrontFunctionComponent<RattingsReviewsProps> = ({}) 
   )
 }
 
-RattingsReviews.schema = {
-  title: 'editor.rattings-reviews.title',
-  description: 'editor.rattings-reviews.description',
-  type: 'object',
-  properties: {},
-}
+// RattingsReviews.schema = {
+//   title: 'editor.rattings-reviews.title',
+//   description: 'editor.rattings-reviews.description',
+//   type: 'object',
+//   properties: {},
+// }
 export default RattingsReviews

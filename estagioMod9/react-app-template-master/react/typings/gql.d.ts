@@ -9,7 +9,7 @@ declare module '*.gql' {
 declare module '*.graphql' {
   import type { DocumentNode } from 'graphql'
 
-  const schema: DocumentNode
+  const Schema: DocumentNode
 
   export default Schema
 }

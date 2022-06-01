@@ -13,8 +13,8 @@
     "./typings/*.d.ts",
     "./**/*.tsx",
     "./**/*.ts",
-    "masterdata.js",
     "components/estrelas/index.js",
-    "components/estrelas/stars.jsx"
-, "graphql/schemas/schema-query/index.js"  ]
+    "components/estrelas/stars.jsx",
+    "graphql/schemas/schema-query/index.js"
+  ]
 }

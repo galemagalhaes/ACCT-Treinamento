@@ -9,6 +9,7 @@ interface Props {
 function Botao({ children, ...props }: Props) {
   return (
     <button
+      data-testId={`botao_${props.id}`}
       id={props.id}
       type={props.type}
       className="f5 grow no-underline br-pill ph3 pv2 dib white ma3 bg-yellow w-30 center bn pointer"

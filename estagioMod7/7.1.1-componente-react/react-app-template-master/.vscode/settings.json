@@ -20,5 +20,9 @@
       "directory": "node",
       "changeProcessCWD": true
     }
-  ]
+  ],
+  "cSpell.words": [
+    "Enviar"
+  ],
+  "cSpell.language": "en,pt-BR"
 }

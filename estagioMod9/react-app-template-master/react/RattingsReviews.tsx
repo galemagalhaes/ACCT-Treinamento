@@ -1,11 +1,11 @@
 /* eslint-disable no-empty-pattern */
 import type { FC } from 'react'
 import React, { useEffect, useState } from 'react'
-import { Input, Alert, Textarea } from 'vtex.styleguide'
+import { Alert, Input, Textarea } from 'vtex.styleguide'
 import { useProduct } from 'vtex.product-context'
 import { useMutation } from 'react-apollo'
 
-import DocumentResponse from './graphql/postData.graphql'
+import POSTING_RATTING from './graphql/postData.graphql'
 import Botao from './components/botao'
 import 'tachyons'
 import StarRattings from './components/estrelas'
@@ -15,11 +15,11 @@ interface Idado {
   Produto: string | undefined
   Data: string | undefined
   Nota: number
-  Comentario: string | undefined
+  Comentario?: string | undefined
 }
 
 const RattingsReviews: FC = ({}) => {
-  const [postRating] = useMutation(DocumentResponse)
+  const [postRating] = useMutation(POSTING_RATTING)
   const productContextSku = useProduct()
 
   const data = new Date()
@@ -72,27 +72,27 @@ const RattingsReviews: FC = ({}) => {
 
   function sendRating() {
     postRating({
+      // fetchPolicy: 'network-only',
       variables: {
         account: 'acctglobal',
         acronym: 'AG',
-        schema: 'formulario',
         document: {
           ' fields': [
             {
               key: 'Cliente',
-              value: dado.Cliente,
+              value: 'dado.Cliente',
             },
             {
               key: 'Produto',
-              value: dado.Produto,
+              value: 'dado.Produto',
             },
             {
               key: 'Data',
-              value: dado.Data,
+              value: 'dado.Data',
             },
             {
               key: 'Nota',
-              value: dado.Nota.toString(),
+              value: 'dado.Nota.toString()',
             },
             {
               key: 'Comentario',
@@ -102,8 +102,6 @@ const RattingsReviews: FC = ({}) => {
         },
       },
     })
-    // eslint-disable-next-line no-console
-    // console.log(dataF)
   }
 
   function enviado() {
@@ -230,10 +228,4 @@ const RattingsReviews: FC = ({}) => {
   )
 }
 
-// RattingsReviews.schema = {
-//   title: 'editor.rattings-reviews.title',
-//   description: 'editor.rattings-reviews.description',
-//   type: 'object',
-//   properties: {},
-// }
 export default RattingsReviews
