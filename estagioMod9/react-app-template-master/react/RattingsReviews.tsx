@@ -8,7 +8,6 @@ import { useMutation } from 'react-apollo'
 
 import POSTING_RATTING from './graphql/postData.graphql'
 import Botao from './components/botao'
-// import 'tachyons'
 import StarRattings from './components/estrelas'
 
 interface Idado {
