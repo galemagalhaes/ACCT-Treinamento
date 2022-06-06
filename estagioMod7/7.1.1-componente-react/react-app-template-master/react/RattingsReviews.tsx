@@ -8,7 +8,6 @@ import React from 'react'
 import Input from './components/input'
 import Botao from './components/botao'
 import Textarea from './components/textarea'
-// import 'tachyons'
 
 interface RattingsReviewsProps {}
 

@@ -30,24 +30,23 @@ If the app exports more than one block, create several tables - one for each blo
 ### `block-1` props
 
 | Prop name    | Type            | Description    | Default value                                                                                                                               |
-| ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | 
+| ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | `XXXXX`      | `XXXXXX`       | XXXXXXXX         | `XXXXXX`        |
-
 
 ### `block-2` props
 
 | Prop name    | Type            | Description    | Default value                                                                                                                               |
-| ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | 
+| ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | `XXXXX`      | `XXXXXX`       | XXXXXXXX         | `XXXXXX`        |
 
-Prop types are: 
+Prop types are:
 
-- `string` 
-- `enum` 
-- `number` 
-- `boolean` 
-- `object` 
-- `array` 
+- `string`
+- `enum`
+- `number`
+- `boolean`
+- `object`
+- `array`
 
 When documenting a prop whose type is `object` or `array` another prop table will be needed. You can create it following the example below:
 

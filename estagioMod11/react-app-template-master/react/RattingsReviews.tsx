@@ -6,12 +6,16 @@
 import  React, { useEffect, useState, FC } from 'react'
 import { Alert } from 'vtex.styleguide'
 import { useProduct } from 'vtex.product-context'
+import { useMutation } from 'react-apollo'
 
 import Form from './components/form'
 import { validarCliente, validarNota } from './components/validacoes/validacao'
 import { Idado } from './interfaces'
+import POSTING_RATTING from './graphql/postData.graphql'
+
 
 const RattingsReviews: FC = ({}) => {
+  const [postRating] = useMutation(POSTING_RATTING)
   const productContextSku = useProduct()
   const data = new Date()
   const dataFormatada = `${data.getDate()}/${
@@ -37,21 +41,8 @@ const RattingsReviews: FC = ({}) => {
     if(validarCliente(dado.Cliente) && validarNota(dado.Nota)){
       setMensagemErroValidacaoCliente("")
       setMensagemErroValidacaoNota("")
-      const raw = JSON.stringify(dado)
-    const myHeaders = new Headers()
-
-    myHeaders.append('Content-Type', 'application/json')
-
-    const requestOptions = {
-      method: 'POST',
-      headers: myHeaders,
-      body: raw,
-    }
-
-    fetch('/api/dataentities/AG/documents', requestOptions)
-      .then((response) => response.text())
-      .then((result) => {console.log(result); enviado()})
-      .catch((error) => { console.log("error", error); naoEnviado()})
+      sendRating()
+      enviado()
     } else {
 
       if(validarCliente(dado.Cliente)){
@@ -68,6 +59,40 @@ const RattingsReviews: FC = ({}) => {
     }
   }
 
+  function sendRating() {
+    postRating({
+      variables: {
+        account: "acctglobal",
+        acronym: "AG",
+        schema: "formglau",
+        document: {
+          fields: [
+            {
+              key: "Cliente",
+              value: dado.Cliente,
+            },
+            {
+              key: "Produto",
+              value: dado.Produto,
+            },
+            {
+              key: "Data",
+              value: dado.Data,
+            },
+            {
+              key: "Nota",
+              value: dado.Nota.toString(),
+            },
+            {
+              key: "Comentario",
+              value: dado.Comentario,
+            },
+          ],
+        },
+      },
+    })
+  }
+
   function enviado(){
     setDado({...dado, Cliente:"", Comentario:""})
     setRating(0)
@@ -75,10 +100,10 @@ const RattingsReviews: FC = ({}) => {
     modalStatusEnvio()
   }
 
-  function naoEnviado(){
-    setMensagem({tipo:"error", mensagem:"Não foi possível enviar os dados, tente de novo."})
-    modalStatusEnvio()
-  }
+  // function naoEnviado(){
+  //   setMensagem({tipo:"error", mensagem:"Não foi possível enviar os dados, tente de novo."})
+  //   modalStatusEnvio()
+  // }
 
   function modalStatusEnvio(){
     setShowPopUp(!showPopUp)
