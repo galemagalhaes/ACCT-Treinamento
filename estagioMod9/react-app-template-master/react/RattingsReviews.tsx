@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable no-empty-pattern */
 import type { FC } from 'react'
 import React, { useEffect, useState } from 'react'
@@ -7,7 +8,7 @@ import { useMutation } from 'react-apollo'
 
 import POSTING_RATTING from './graphql/postData.graphql'
 import Botao from './components/botao'
-import 'tachyons'
+// import 'tachyons'
 import StarRattings from './components/estrelas'
 
 interface Idado {
@@ -72,27 +73,27 @@ const RattingsReviews: FC = ({}) => {
 
   function sendRating() {
     postRating({
-      // fetchPolicy: 'network-only',
       variables: {
         account: 'acctglobal',
         acronym: 'AG',
+        schema: 'formglau',
         document: {
-          ' fields': [
+          fields: [
             {
               key: 'Cliente',
-              value: 'dado.Cliente',
+              value: dado.Cliente,
             },
             {
               key: 'Produto',
-              value: 'dado.Produto',
+              value: dado.Produto,
             },
             {
               key: 'Data',
-              value: 'dado.Data',
+              value: dado.Data,
             },
             {
               key: 'Nota',
-              value: 'dado.Nota.toString()',
+              value: dado.Nota.toString(),
             },
             {
               key: 'Comentario',

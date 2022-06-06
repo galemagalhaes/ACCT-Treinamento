@@ -7,7 +7,6 @@ import  React, { useEffect, useState, FC } from 'react'
 import { Alert } from 'vtex.styleguide'
 import { useProduct } from 'vtex.product-context'
 
-import 'tachyons'
 import Form from './components/form'
 import { validarCliente, validarNota } from './components/validacoes/validacao'
 import { Idado } from './interfaces'

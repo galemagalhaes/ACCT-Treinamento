@@ -1,9 +1,15 @@
 mutation POSTING_RATTING(
-  $account: String!
-  $acronym: String
+  $account: String
+  $acronym: String!
+  $schema: String
   $document: DocumentInput
 ) {
-  createDocument(account: $account, acronym: $acronym, document: $document) {
+  createDocument(
+    account: $account
+    acronym: $acronym
+    schema: $schema
+    document: $document
+  ) {
     documentId
   }
 }

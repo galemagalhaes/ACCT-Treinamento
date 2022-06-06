@@ -1,6 +1,5 @@
 import React from 'react'
 import { render, RenderResult } from '@vtex/test-tools/react'
-// import { render, RenderResult } from '@testing-library/react'
 import '@testing-library/jest-dom'
 
 import { Idado } from '../../interfaces'
@@ -37,7 +36,6 @@ describe('form', () => {
       const elemento = componente.getByText('Avaliação de Produto')
 
       expect(elemento).toBeInTheDocument()
-      // expect(queryByText('Hey, Fred')).toBeInTheDocument()
     })
   })
 })
