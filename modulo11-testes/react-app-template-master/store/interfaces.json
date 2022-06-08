@@ -1,0 +1,13 @@
+{
+  "rattings-reviews": {
+    "around": [
+      "rattings-context"
+    ],
+    "component": "RattingsReviews",
+    "render": "client"
+  },
+  "rattings-context": {
+    "component":"RattingsReviewsProvider",
+    "render":"client"
+  }
+}

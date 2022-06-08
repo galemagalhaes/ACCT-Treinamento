@@ -1,0 +1,19 @@
+query CONSULT_DATA(
+  $acronym: String!
+  $account: String
+  $schema: String
+  $fields: [String]
+) {
+  documents(
+    acronym: $acronym
+    account: $account
+    schema: $schema
+    fields: $fields
+  ) {
+    id
+    fields {
+      key
+      value
+    }
+  }
+}
