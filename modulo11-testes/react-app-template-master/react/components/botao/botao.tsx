@@ -3,13 +3,14 @@ import React from 'react'
 interface Props {
   children: string
   type?: 'button' | 'submit' | 'reset' | undefined
-  id: string
+  id?: string
   onClick?: any
 }
 
 function Botao({ children, ...props }: Props) {
   return (
     <button
+      data-testId={`botao_${props.id}`}
       onClick={props.onClick}
       id={props.id}
       type={props.type}

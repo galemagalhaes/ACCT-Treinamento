@@ -5,6 +5,7 @@ interface Props {
   type?: string
   id?: string
   value?: string
+  // onChange?: any
   handleOnchange: (event: any) => void
 }
 

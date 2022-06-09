@@ -33,10 +33,28 @@ describe('form', () => {
   })
 
   describe('form', () => {
+    it('DEVE renderizar o componente', () => {
+      const elemento = componente.getByTestId('formulario')
+
+      expect(elemento).toBeInTheDocument()
+    })
+
     it('DEVE renderizar o título "Avaliação de Produto"', () => {
       const elemento = componente.getByText('Avaliação de Produto')
 
       expect(elemento).toBeInTheDocument()
+    })
+
+    it('DEVE renderizar o botão', () => {
+      const botao = componente.getByTestId('botao_enviar')
+
+      expect(botao).toBeDefined()
+    })
+
+    it('DEVE renderizar o texto do botão', () => {
+      const botao = componente.getByTestId('botao_enviar')
+
+      expect(botao.textContent).toContain('Enviar')
     })
   })
 })

@@ -1,8 +1,8 @@
 import React from 'react'
-import { Button, Textarea } from 'vtex.styleguide'
 
 import Input from '../input'
-import 'tachyons'
+import Botao from '../botao'
+import Textarea from '../textarea'
 import StarRatings from '../estrelas'
 import type { Idado } from '../../interfaces'
 
@@ -21,13 +21,13 @@ function Form(props: Props) {
     handleRating,
     handleSetDado,
     handleSetRating,
-    handleMensagemErroValidacaoCliente,
+    // handleMensagemErroValidacaoCliente,
     handleMensagemErroValidacaoNota,
     handleOnClick,
   } = props
 
   return (
-    <div className=" ma5 center pa2">
+    <div className=" ma5 center pa2" data-testId="formulario">
       <div className="mw-100 flex flex-column">
         <h1 className="center mt5 mb5 f3 gray">Avaliação de Produto</h1>
       </div>
@@ -54,13 +54,13 @@ function Form(props: Props) {
       <div className="mw-100 flex flex-column">
         <Input
           id="user"
-          className="br2 bn mb4 pa2"
+          className="br2 bg-base mb4 pa2"
           placeholder="Digite aqui o nome do usuário"
           // label="Nome do usuário"
           value={handleDado?.Cliente}
-          errorMessage={handleMensagemErroValidacaoCliente}
+          // errorMessage={(e: any) => handleMensagemErroValidacaoCliente}
           required
-          onChange={(e: any) =>
+          onchange={(e: any) =>
             handleSetDado({ ...handleDado, Cliente: e.target.value })
           }
         />
@@ -74,23 +74,18 @@ function Form(props: Props) {
         />
 
         <Textarea
-          label="Comentário:"
+          // label="Comentário:"
           placeholder="Deixe seu comentário (opcional)"
-          onChange={(e: any) =>
+          handleOnchange={(e: any) =>
             handleSetDado({ ...handleDado, Comentario: e.target.value })
           }
         />
       </div>
 
       <div className="flex justify-center mt3 mb3">
-        <Button
-          onClick={handleOnClick}
-          type="button"
-          size="small"
-          variation="primary"
-        >
+        <Botao onClick={handleOnClick} type="button" id="enviar">
           Enviar
-        </Button>
+        </Botao>
       </div>
     </div>
   )
