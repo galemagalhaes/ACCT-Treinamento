@@ -2,6 +2,7 @@ import React from 'react'
 import type { RenderResult } from '@vtex/test-tools/react'
 import { render } from '@vtex/test-tools/react'
 import '@testing-library/jest-dom'
+import { useMutation } from 'react-apollo'
 
 import type { Idado } from '../../interfaces'
 import Form from '.'
@@ -10,9 +11,29 @@ const mockDado = {
   Cliente: '',
   Produto: '200104',
   Data: '31/5/2022',
-  Nota: 1,
+  Nota: 0,
   Comentario: '',
 } as Idado
+
+// const mockDadoMutation = {
+//   Cliente: 'Fulano teste',
+//   Produto: '200104',
+//   Data: '31/5/2022',
+//   Nota: 2,
+//   Comentario: 'qualquer coisa',
+// } as Idado
+
+// let mockedUseMutation = useMutation
+
+jest.mock('react-apollo', () => {
+  return {
+    useMutation: () => ({
+      document: {
+        fields: [],
+      },
+    }),
+  }
+})
 
 describe('form', () => {
   let componente: RenderResult
@@ -33,7 +54,7 @@ describe('form', () => {
   })
 
   describe('form', () => {
-    it('DEVE renderizar o componente', () => {
+    it('DEVE renderizar o componente Form', () => {
       const elemento = componente.getByTestId('formulario')
 
       expect(elemento).toBeInTheDocument()
@@ -57,4 +78,20 @@ describe('form', () => {
       expect(botao.textContent).toContain('Enviar')
     })
   })
+  // describe('Mutation', () => {
+  //   it('DEVE confirmar o envio de dados', () => {
+  //     mockedUseMutation = {
+  //       document: {
+  //         fields: [
+  //           { key: 'Cliente', value: mockDadoMutation.Cliente },
+  //           { key: 'Produto', value: mockDadoMutation.Produto },
+  //           { key: 'Data', value: mockDadoMutation.Data },
+  //           { key: 'Nota', value: mockDadoMutation.Nota },
+  //           { key: 'Comentario', value: mockDadoMutation.Comentario },
+  //         ],
+  //       },
+  //     }
+  //     expect(mockedUseMutation).toBeDefined()
+  //   })
+  // })
 })
